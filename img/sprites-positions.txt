@@ -1,0 +1,172 @@
+.bg-checkbox_off {
+    width: 23px; height: 23px;
+    background: url('css_sprites.png') -147px -151px;
+}
+
+x
+.bg-checkbox_on {
+    width: 27px; height: 23px;
+    background: url('css_sprites.png') -269px -188px;
+}
+
+x
+.bg-filter_button {
+    width: 20px; height: 23px;
+    background: url('css_sprites.png') -190px -151px;
+}
+
+x
+.bg-form_1 {
+    width: 66px; height: 66px;
+    background: url('css_sprites.png') -269px -10px;
+}
+
+x
+.bg-form_2 {
+    width: 21px; height: 21px;
+    background: url('css_sprites.png') -115px -232px;
+}
+
+x
+.bg-icon_1 {
+    width: 44px; height: 65px;
+    background: url('css_sprites.png') -10px -232px;
+}
+
+x
+.bg-icon_2 {
+    width: 75px; height: 61px;
+    background: url('css_sprites.png') -10px -151px;
+}
+
+x
+.bg-icon_3 {
+    width: 78px; height: 62px;
+    background: url('css_sprites.png') -171px -10px;
+}
+
+x
+.bg-icon_4 {
+    width: 59px; height: 72px;
+    background: url('css_sprites.png') -269px -96px;
+}
+
+x
+.bg-icon_5 {
+    width: 78px; height: 63px;
+    background: url('css_sprites.png') -10px -68px;
+}
+
+x
+.bg-icon_bookmark {
+    width: 14px; height: 16px;
+    background: url('css_sprites.png') -195px -273px;
+}
+
+x
+.bg-icon_cart {
+    width: 15px; height: 15px;
+    background: url('css_sprites.png') -202px -232px;
+}
+
+x
+.bg-icon_down_dir {
+    width: 11px; height: 10px;
+    background: url('css_sprites.png') -355px -82px;
+}
+
+x
+.bg-icon_fb {
+    width: 12px; height: 22px;
+    background: url('css_sprites.png') -355px -10px;
+}
+
+x
+.bg-icon_home {
+    width: 15px; height: 12px;
+    background: url('css_sprites.png') -237px -232px;
+}
+
+x
+.bg-icon_insta {
+    width: 21px; height: 21px;
+    background: url('css_sprites.png') -74px -232px;
+}
+
+x
+.bg-icon_left {
+    width: 22px; height: 40px;
+    background: url('css_sprites.png') -105px -151px;
+}
+
+x
+.bg-icon_login {
+    width: 20px; height: 17px;
+    background: url('css_sprites.png') -155px -273px;
+}
+
+x
+.bg-icon_logout {
+    width: 21px; height: 17px;
+    background: url('css_sprites.png') -114px -273px;
+}
+
+x
+.bg-icon_phone {
+    width: 19px; height: 19px;
+    background: url('css_sprites.png') -316px -188px;
+}
+
+x
+.bg-icon_right {
+    width: 22px; height: 40px;
+    background: url('css_sprites.png') -108px -68px;
+}
+
+x
+.bg-icon_right_small {
+    width: 8px; height: 12px;
+    background: url('css_sprites.png') -355px -112px;
+}
+
+x
+.bg-icon_search {
+    width: 17px; height: 17px;
+    background: url('css_sprites.png') -230px -151px;
+}
+
+x
+.bg-icon_up_dir {
+    width: 11px; height: 10px;
+    background: url('css_sprites.png') -355px -52px;
+}
+
+x
+.bg-icon_user {
+    width: 20px; height: 18px;
+    background: url('css_sprites.png') -74px -273px;
+}
+
+x
+.bg-icon_vk {
+    width: 26px; height: 15px;
+    background: url('css_sprites.png') -156px -232px;
+}
+
+x
+.bg-radio_off {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -171px -92px;
+}
+
+x
+.bg-radio_on {
+    width: 25px; height: 25px;
+    background: url('css_sprites.png') -216px -92px;
+}
+
+x
+.bg-red_button {
+    width: 141px; height: 38px;
+    background: url('css_sprites.png') -10px -10px;
+}
