@@ -27,8 +27,8 @@
                 <p class="header-info">+7(812)555-05-55</p>
                 <p>г.Санкт-Петербург, ул. Б.конюшенная, д.19/8</p>
                 <ul class="user-navigation">
-                    <li class="login-link">Войти</li>
-                    <li class="registration-link">Регистрация</li>
+                    <li class="login-link"><a href="#" title="Войти" class="header-login">Войти</a></li>
+                    <li class="registration-link"><a href="#" title="Регистрация" class="header-registration">Регистрация</a></li>
                 </ul>
             </section>
             <nav class="main-navigation">
@@ -58,17 +58,83 @@
             
             <div class="filter">
                 <p>Фильтр:</p>
-                <!-- Формы -->
+                <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
+                    <p>
+                        <label for="filter-price">Цена:</label>
+                        <input type="range" min="0" max="30000" namer="price-range" id="filter-price">
+                        <span>0</span>
+                        <span>-</span>
+                        <span>30000</span>
+                    </p>
+                    
+                    <fieldset>
+                        <legend>Производители</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-checkbox" type="checkbox" name="BOSCH" id="filter-bosch" checked>
+                                <label for="filter-bosch">BOSCH</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-checkbox" type="checkbox" name="ИНТЕРСКОЛ" id="filter-interscol">
+                                <label for="filter-interscol">Интерскол</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-checkbox" type="checkbox" name="MAKITA" id="filter-makita" checked>
+                                <label for="filter-makita">Makita</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-checkbox" type="checkbox" name="DEWALT" id="filter-dewalt">
+                                <label for="filter-dewalt">Dewalt</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-checkbox" type="checkbox" name="HITACHI" id="filter-hitachi">
+                                <label for="filter-hitachi">Hitachi</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Питание:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-radio" type="radio" name="battery" id="filter-battery" checked>
+                                <label for="filter-battery">Аккумуляторные</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-radio" type="radio" name="voltage" id="filter-voltage">
+                                <label for="filter-voltage">Сетевые</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    
+                    <label for="show-button" class="visually-hidden">Показать результаты</label>
+                    <button type="submit" class="button filter-button" id="show-button">Показать</button>
+                </form>
             </div>
             
             <div class="sort">
                 <p>Сортировка:</p>
                 <ul class="sort">
-                    <li class="sort-item">По цене</li>
-                    <li class="sort-item">По типу</li>
-                    <li class="sort-item">По функционалу</li>
-                    <li class="sort-item sort-up-button">Вверх</li>
-                    <li class="sort-item sort-down-button">Вниз</li>
+                    <li class="sort-item">
+                        <label for="sort-price" class="visually-hidden">По цене</label>
+                        <button type="button" class="button sort-button" id="sort-price">По цене</button>
+                    </li>
+                    <li class="sort-item">
+                        <label for="sort-type" class="visually-hidden">По типу</lable>
+                        <button type="button" class="button sort-button" id="sort-type">По типу</button>
+                    </li>
+                    <li class="sort-item">
+                        <label for="sort-function" class="visually-hidden">По функционалу</label>
+                        <button type="button" class="button sort-button" id="sort-function">По функционалу</button>
+                    </li>
+                    <li class="sort-item sort-up-button">
+                       <label for="sort-up" class="visually-hidden">По убыванию</label>
+                        <button type="button" class="button sort-range-button" id="sort-up">Вверх</button>
+                    </li>
+                    <li class="sort-item sort-down-button">
+                        <label for="sort-down" class="visually-hidden">По возрастанию</label>
+                        <button type="button" class="button sort-range-button" id="sort-down">Вниз</button>
+                    </li>
                 </ul>
             </div>
             
@@ -185,10 +251,10 @@
                     </li>
                 </ul>
                 <ul class="paginator-list">
-                    <li class="paginator-item">1</li>
-                    <li class="paginator-item">2</li>
-                    <li class="paginator-item">3</li>
-                    <li class="paginator-item">Следующая</li>
+                    <li class="paginator-item"><a href="#">1</a></li>
+                    <li class="paginator-item"><a href="#">2</a></li>
+                    <li class="paginator-item"><a href="#">3</a></li>
+                    <li class="paginator-item"><a href="#">Следующая</a></li>
                 </ul>
             </section>
             
@@ -247,7 +313,7 @@
                     <h3>Товар добавлен в корзину!</h3>
                     <button type="button" class="modal-button-buy">Оформить заказ</button>
                     <button type="button" class="modal-button-continue">Продолжить покупки</button>
-                    <button type="button" class="modal-button-close">x</button> 
+                    <button type="button" class="modal-button-close">Закрыть</button> 
                 </form>   
             </section>
         </main>

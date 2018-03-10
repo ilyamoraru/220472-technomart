@@ -27,8 +27,8 @@
                 <p class="header-info">+7(812)555-05-55</p>
                 <p>г.Санкт-Петербург, ул. Б.конюшенная, д.19/8</p>
                 <ul class="user-navigation">
-                    <li class="login-link">Войти</li>
-                    <li class="registration-link">Регистрация</li>
+                    <li class="login-link"><a href="#" title="Войти" class="header-login">Войти</a></li>
+                    <li class="registration-link"><a href="#" title="Регистрация" class="header-registration">Регистрация</a></li>
                 </ul>
             </section>
             <nav class="main-navigation">
@@ -43,6 +43,7 @@
                 </ul>
             </nav>
         </header>
+        
         <main class="container">
             <h1 class="visually-hidden">Техномарт</h1>
             
@@ -240,7 +241,7 @@
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис:</p>
                 <a href="#" title="Контакты" class="button contacts-button">Заблудились? Напишите нам!</a>
-                <img src="img/map.png" alt="Как добраться?" width="300" height="158">
+                <img src="img/map.png" alt="Как добраться? г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8" width="300" height="158">
             </section>
             
             <footer class="main-footer">
@@ -289,16 +290,31 @@
             
              <section class="modal modal-map">
                 <h2 class="visually-hidden">Как до нас добраться</h2>
+                 <img src="img/big-map.jpg" alt="Как до нас добраться? г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8" width="941" height="449">
                 <form class="modal-form">
-                    <button type="button" class="modal-button-close">x</button> 
+                    <button type="button" class="modal-button-close">Закрыть</button> 
                 </form>   
              </section>
             
             <section class="modal modal-contacts">
                 <h2 class="visually-hidden">Написать нам</h2>
-                <form class="modal-form">
-                    <button type="button" class="modal-button-sybmit">Отправить</button>
-                    <button type="button" class="modal-button-close">x</button> 
+                <form class="modal-form contacts" method="post" action="https://echo.htmlacademy.ru">
+                    <p>
+                        <label for="contacts-name">Ваше имя:</label>
+                        <input type="text" name="user-name" id="contacts-name"  placeholder="Представьтесь, пожалуйста">
+                    </p>
+                    <p>
+                        <label for="contacts-email">Ваш e-mail:</label>
+                        <input type="email" name="user-email" id="contacts-email" placeholder="Для отправки ответа">
+                    </p>
+                    <p>
+                        <label for="contacts-letter">Текст письма:</label>
+                        <textarea name="user-letter" id="contacts-letter" placeholder="В свободной форме"></textarea>
+                    </p>
+                    <p>
+                        <button type="submit" class="modal-button-sybmit">Отправить</button>
+                        <button type="button" class="modal-button-close">Закрыть</button>
+                    </p>
                 </form>   
             </section>
         </main>
