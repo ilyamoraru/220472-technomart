@@ -18,6 +18,22 @@ a {
     border: 1px solid #ee3744;
 }
 
+.button {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+.label-new {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+main h2, 
+main h3 {
+    font-size: 30px;
+    line-height: 30px;
+}
 /* index.html and total stilization*/
 
 /*.visually-hidden {
@@ -36,12 +52,16 @@ a {
 .header-user, .header-user a {
     background-color: #293449;
     color: #ffffff;
+    font-size: 17px;
+    line-height: 18px;
 }
 
 .main-logo .logo {
     background-color: #ee3643;
     color: #ffffff;
     text-transform: uppercase;
+    font-size: 24px;
+    line-height: 24px;
     border-bottom: 5px solid #b52933;
 }
 
@@ -57,6 +77,8 @@ a {
 
 .header-order-button .order {
     background-color: #63a63e;
+    font-size: 17px;
+    line-height: 18px;
     
 }
 
@@ -106,7 +128,21 @@ a {
 
 .header-info {
     font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
     color: #ee3643;
+}
+
+.tel {
+    border: 3px solid white;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.header-adress {
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .user-navigation {
@@ -118,6 +154,8 @@ a {
     font: inherit;
     color: #000000;
     text-transform: uppercase;
+    font-size: 21px;
+    line-height: 21px;
 }
 
 .header-login:hover,
@@ -140,6 +178,8 @@ a {
 
 .login-link-active {
     background-color: #ffffff;
+    font-size: 21px;
+    line-height: 21px;
 }
 
 .header-login-active:active {
@@ -149,6 +189,8 @@ a {
 .my-orders,
 .personal {
     text-decoration: underline;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .my-orders:hover a,
@@ -161,10 +203,6 @@ a {
     color: rgba(178, 178, 178, 0.3);
 }
 
-.tel {
-    border: 3px solid white;
-    font-style: normal;
-}
 
 .main-navigation {
     background-color: #32425c;
@@ -179,6 +217,8 @@ a {
     text-transform: uppercase;
     background-color: #32425c;
     color: #ffffff;
+    font-size: 17px;
+    line-height: 17px;
 }
 
 .site-navigation a:hover {
@@ -194,6 +234,11 @@ a {
 
 .features-list {
     list-style: none;
+}
+
+.features-item h3 {
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .features-list h3, .label-new {
@@ -244,6 +289,13 @@ a {
 }
 .catalog-slide span:first-of-type {
     text-transform: uppercase;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.catalog-slide span:nth-of-type(2) {
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .catalog-slide .button  {
@@ -290,16 +342,28 @@ a {
     border: 1px solid #eaeaea;
 }
 
-.catalog-shadow:hover {
+.catalog-shadow .products-item:hover {
     box-shadow: 0px 5px 20px 0px #b4b8bf;
 }
 
 .product-name {
     font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .price-del {
     color: #a9a9a9;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #ee3643;
 }
 
 .hidden-button-buy,
@@ -373,9 +437,12 @@ a {
 .services-item a{
     background-color: #32425c;
     color: #ffffff;
+    font-size: 21px;
+    line-height: 30px;
 }
 
-.services-item a:hover {
+.services-item a:hover,
+.services-item a:focus {
     background-color: #293449;
 }
 
@@ -391,6 +458,7 @@ a {
 .services-credit-button {
     background-color: #ff5357;
     color: #ffffff;
+    border: none;
 }
 
 /*section class="about"*/
@@ -401,6 +469,11 @@ a {
 
 .about-delivery {
     list-style-image: url(list-about.png);
+}
+
+.about-delivery-item {
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .about-button {
@@ -426,12 +499,19 @@ a {
     color: #f1f5f7;
 }
 
+.footer-contacts {
+    font-size: 18px;
+    line-height: 24px;
+}
+
 .footer-navigation {
     list-style: none;
 }
 
 .footer-navigation a {
     color: #f1f5f7;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .footer-features {
@@ -440,6 +520,8 @@ a {
 
 .footer-features a {
     color: #ffd180;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .footer-navigation a:hover,
@@ -464,6 +546,11 @@ a {
     list-style: none;
 }
 
+.footer-social p {
+    font-size: 16px;
+    line-height: 18px;
+}
+
 .social-button a {
     background-color: #212a3a;
     color: #ffffff;
@@ -480,6 +567,8 @@ a {
 
 .connection a {
     color: #ffd180;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .connection a:hover {
@@ -506,11 +595,15 @@ a {
 
 .modal-form label {
     font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
 }
 
 .modal-form input,
 .modal-form textarea {
     border: 2px solid #dee3e4;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 .modal-form input:hover,
@@ -546,16 +639,28 @@ a {
 .breadcrumbs a {
     text-transform: uppercase;
     color: #000000;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 /* filter form */
 
-.filter p:not(:nth-of-type(2)) {
+.filter p {
     background-color: #f7f3ec;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 .filter label {
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.range-style span {
+    font-size: 17px;
+    line-height: 18px;
 }
 
 .range-style,
@@ -574,10 +679,19 @@ a {
 
 .fieldset-style legend {
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
 }
 
 .fieldset-style ul {
     list-style: none;
+}
+
+.filter-option {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
 }
 
 .filter-button {
@@ -653,6 +767,11 @@ a {
 
 /* section class="modal-buy" */
 
+.modal-form h3 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
 .modal-buy {
     border-top: 7px solid #ee3643;
     box-shadow: 0 10px 30px 0px #111720;
@@ -666,6 +785,14 @@ a {
     background-color: #ee3643;
     border: none;
     color: #ffffff;
+}
+
+.modal-button-buy:hover {
+    background-color: #ca2c37;
+}
+
+.modal-button-buy:active {
+    background-color: #ba2732;
 }
 
 .modal-button-continue {
