@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "PTSans";
+    src: url("../fonts/web/ptsans.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PTSans";
+    src: url("../fonts/web/ptsansbold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -153,7 +167,6 @@ main h3 {
     background-color: #ffffff;
     font: inherit;
     color: #000000;
-    text-transform: uppercase;
     font-size: 21px;
     line-height: 21px;
 }
@@ -214,7 +227,7 @@ main h3 {
 }
 
 .site-navigation a {
-    text-transform: uppercase;
+    
     background-color: #32425c;
     color: #ffffff;
     font-size: 17px;
@@ -291,6 +304,7 @@ main h3 {
     text-transform: uppercase;
     font-size: 36px;
     line-height: 36px;
+    text-transform: bold;
 }
 
 .catalog-slide span:nth-of-type(2) {
@@ -303,6 +317,8 @@ main h3 {
     background-color: #ee3643;
     color: #ffffff;
     text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .catalog-slide .button:hover {
@@ -318,6 +334,10 @@ main h3 {
 .popular-header {
     background-color: #f9f5f0;
     text-transform: uppercase;
+}
+
+.popular-header h2 {
+    font-weight: normal;
 }
 
 .popular-button {
@@ -340,6 +360,10 @@ main h3 {
 
 .products-item {
     border: 1px solid #eaeaea;
+}
+
+.catalog-shadow {
+    font-family: "PTSans", Arial, sans-serif;
 }
 
 .catalog-shadow .products-item:hover {
@@ -382,6 +406,7 @@ main h3 {
     border: none;
     color: #ffffff;
     box-shadow: 0px 3px 0 0 #367315;
+    text-transform: uppercase;
 }
 
 .hidden-button-buy:hover {
@@ -397,6 +422,7 @@ main h3 {
     background-color: #ffffff;
     color: #32425c;
     border: 3px solid #63a63e;
+    text-transform: uppercase;
 }
 
 .hidden-button-marker:hover {
@@ -439,6 +465,7 @@ main h3 {
     color: #ffffff;
     font-size: 21px;
     line-height: 30px;
+    font-weight: bold;
 }
 
 .services-item a:hover,
@@ -453,6 +480,11 @@ main h3 {
 
 .services h3 {
     text-transform: uppercase;
+    font-weight: normal;
+}
+
+div[class*="services-right"] h3 {
+    text-transform: none;
 }
 
 .services-credit-button {
@@ -461,15 +493,24 @@ main h3 {
     border: none;
 }
 
+.services-credit-button:hover {
+    background-color: #ca2c37;
+}
+
+.services-credit-button:active {
+    background-color: #ba2732;
+}
+
 /*section class="about"*/
 
 .about h2 {
     text-transform: uppercase;
+    font-weight: normal;
 }
 
-.about-delivery {
+/*.about-delivery {
     list-style-image: url(list-about.png);
-}
+}*/
 
 .about-delivery-item {
     font-size: 18px;
@@ -481,15 +522,32 @@ main h3 {
     color: #ffffff;
 }
 
+.about-button:hover {
+    background-color: #ca2c37;
+}
+
+.about-button:active {
+    background-color: #ba2732;
+}
+
 /* section class="contacts"*/
 
 .contacts h2 {
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 .contacts-button {
     background-color: #ff5357;
     color: #ffffff;
+}
+
+.contacts-button:hover {
+    background-color: #ca2c37;
+}
+
+.contacts-button:active {
+    background-color: #ba2732;
 }
 
 /* footer class="main-header */
@@ -594,7 +652,6 @@ main h3 {
 }
 
 .modal-form label {
-    font-weight: bold;
     font-size: 18px;
     line-height: 18px;
 }
@@ -623,16 +680,32 @@ main h3 {
     color: #ffffff;
 }
 
+.modal-button-sybmit:hover {
+    background-color: #ca2c37;
+}
+
+.modal-button-sybmit:active {
+    background-color: #ba2732;
+}
+
 /* catalog.html stilization*/
 
 /* breadscrumbs */
 
 .catalog-item-name {
+    font-weight: normal;
     background-color: #f2f6f8;
     text-transform: uppercase;
 }
 
+.catalog-item-name h1 {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+}
+
 .breadcrumbs {
+    font-family: "PTSans", Arial, sans-serif;
     list-style: none;
 }
 
@@ -644,6 +717,9 @@ main h3 {
 }
 
 /* filter form */
+.filter {
+    font-family: "PTSans", Arial, sans-serif;
+}
 
 .filter p {
     background-color: #f7f3ec;
@@ -653,7 +729,6 @@ main h3 {
 
 .filter label {
     text-transform: uppercase;
-    font-weight: bold;
     font-size: 17px;
     line-height: 30px;
 }
@@ -712,6 +787,7 @@ main h3 {
     background-color: #f7f3ec;
     text-transform: uppercase;
     list-style: none;
+    font-family: "PTSans", Arial, sans-serif;
 }
 
 .sort-item a {
@@ -740,6 +816,7 @@ main h3 {
     background-color: #ffffff;
     color: #000000;
     border: 1px solid #e5e5e5;
+    text-transform: uppercase;
 }
 
 .paginator-item a:hover {
@@ -763,6 +840,7 @@ main h3 {
 
 .catalog-item-about h2 {
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 /* section class="modal-buy" */
