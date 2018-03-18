@@ -33,6 +33,7 @@ a {
 }
 
 .button {
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
 }
@@ -304,7 +305,7 @@ main h3 {
     text-transform: uppercase;
     font-size: 36px;
     line-height: 36px;
-    text-transform: bold;
+    font-weight: bold;
 }
 
 .catalog-slide span:nth-of-type(2) {
@@ -380,6 +381,7 @@ main h3 {
     color: #a9a9a9;
     font-size: 17px;
     line-height: 18px;
+    font-weight: bold;
 }
 
 .price {
@@ -407,6 +409,7 @@ main h3 {
     color: #ffffff;
     box-shadow: 0px 3px 0 0 #367315;
     text-transform: uppercase;
+    font-family: "Cuprum", Arial, sans-serif;
 }
 
 .hidden-button-buy:hover {
@@ -423,6 +426,7 @@ main h3 {
     color: #32425c;
     border: 3px solid #63a63e;
     text-transform: uppercase;
+    font-family: "Cuprum", Arial, sans-serif;
 }
 
 .hidden-button-marker:hover {
@@ -456,6 +460,10 @@ main h3 {
     background-color: #f4f7f9;
 }
 
+.services-top p {
+    font-family: "PTSans", Arial, sans-serif;
+}
+
 .services-list {
     list-style: none;
 }
@@ -485,6 +493,12 @@ main h3 {
 
 div[class*="services-right"] h3 {
     text-transform: none;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+div[class*="services-right"] p {
+    font-family: "PTSans", Arial, sans-serif;
 }
 
 .services-credit-button {
@@ -506,6 +520,10 @@ div[class*="services-right"] h3 {
 .about h2 {
     text-transform: uppercase;
     font-weight: normal;
+}
+
+.about p {
+    font-family: "PTSans", Arial, sans-serif;
 }
 
 /*.about-delivery {
@@ -535,6 +553,10 @@ div[class*="services-right"] h3 {
 .contacts h2 {
     text-transform: uppercase;
     font-weight: normal;
+}
+
+.contacts p {
+    font-family: "PTSans", Arial, sans-serif;
 }
 
 .contacts-button {
@@ -652,15 +674,17 @@ div[class*="services-right"] h3 {
 }
 
 .modal-form label {
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 18px;
     line-height: 18px;
 }
 
 .modal-form input,
 .modal-form textarea {
-    border: 2px solid #dee3e4;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
+    border: 2px solid #dee3e4;
 }
 
 .modal-form input:hover,
@@ -675,7 +699,6 @@ div[class*="services-right"] h3 {
 
 .modal-button-sybmit {
     border: none;
-    font: inherit;
     background-color: #ee3643;
     color: #ffffff;
 }
@@ -731,6 +754,7 @@ div[class*="services-right"] h3 {
     text-transform: uppercase;
     font-size: 17px;
     line-height: 30px;
+    font-weight: bold;
 }
 
 .range-style span {
@@ -763,13 +787,16 @@ div[class*="services-right"] h3 {
     list-style: none;
 }
 
-.filter-option {
+.filter-option label {
     font-weight: normal;
     font-size: 15px;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 .filter-button {
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
     border: 1px solid #e5e5e5;
     background-color: #ffffff;
 }
@@ -817,6 +844,8 @@ div[class*="services-right"] h3 {
     color: #000000;
     border: 1px solid #e5e5e5;
     text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 .paginator-item a:hover {
@@ -841,6 +870,10 @@ div[class*="services-right"] h3 {
 .catalog-item-about h2 {
     text-transform: uppercase;
     font-weight: normal;
+}
+
+.catalog-item-about {
+    font-family: "PTSans", Arial, sans-serif;
 }
 
 /* section class="modal-buy" */
