@@ -111,12 +111,11 @@ input[type="radio"].visually-hidden {
 
 .logo-wrapper {
     padding-top: 8px;
-    
 } 
 
 .wrapper-user-nav {
     height: 100px;
-    margin-left: 75px;
+    margin-left: 60px;
     margin-top: 45px;
 }
 
@@ -126,8 +125,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
     height: 42px;
-    width: 940px;
-    
+    min-width: 940px;
 }
 
 .header-contacts {
@@ -146,7 +144,7 @@ input[type="radio"].visually-hidden {
 .main-logo .logo {
     height: 36px;
     width: 110px;
-    padding: 8px 50px 8px 50px; 
+    padding: 8px 55px 8px 55px; 
     background-color: #ee3643;
     border-bottom: 5px solid #b52933;
     color: #ffffff;
@@ -173,11 +171,10 @@ input[type="radio"].visually-hidden {
 .header-order-button .order {
     width: 150px;
     height: 42px;
-    padding: 16px 16px 14px 14px;
+    padding: 16px 21px 14px 21px;
     background-color: #63a63e;
     font-size: 17px;
-    line-height: 18px;
-    
+    line-height: 18px;   
 }
 
 .header-order-button:hover .order {
@@ -189,33 +186,44 @@ input[type="radio"].visually-hidden {
     color: rgba(170, 195, 155, 0.51);
 }
 
-.control:not(.header-order-button) {
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
 .main-search {
     width: 270px;
+    margin: 0;
+    padding: 0;
 }
 
-.main-search::before {
-    content: "";
-    display: inline-block;
-    position: relative;
-    top: 5px;
-    padding-right: 10px;
-    background: url("../img/css_sprites.png") no-repeat -230px -151px;
-    width: 17px;
-    height: 17px;
+.input-search {
+    background: url("../img/icon-search.svg") no-repeat;
+    background-size: 17px 17px;
+    background-position: 10px 13px;
     opacity: 0.3;
 }
 
-.main-search:hover::before {
+.input-search:hover {
     opacity: 1;
 }
 
-.main-search:active::before  {
-    opacity: 0.3;
+.input-search:active,
+.input-search:focus {
+    background: url("../img/icon-search-active.svg") no-repeat;
+    background-size: 17px 17px;
+    background-position: 10px 13px;
+    opacity: 1;
+}
+
+.input-search:active .main-search::before,
+.input-search:focus .main-search::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    left: 230px;
+    top: 13px;
+    padding-right: 10px;
+    background: url("../img/css_sprites.png") no-repeat -235px -273px;
+    width: 17px;
+    height: 17px;
+    
 }
 
 .control:hover {
@@ -223,7 +231,12 @@ input[type="radio"].visually-hidden {
 }
 
 .control .input-search {
-    width: 225px;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    padding-left: 50px;
+    width: 220px;
+    height: 42px;
     background-color: #293449;
     border: none;
     color: #ffffff;
@@ -251,8 +264,9 @@ input[type="radio"].visually-hidden {
 }
 
 .header-user .main-header-marker {
-    padding: 5px 10px;
-    width: 130px;
+    padding: 10px 10px;
+    padding-top: 5px;
+    width: 120px;
 }
 
 .main-header-marker::before {
@@ -260,10 +274,11 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     position: relative;
     top: 8px;
-    background: url("../img/css_sprites.png") no-repeat -235px -273px;
-    padding-right: 10px; 
+    background: url("../img/css_sprites.png") no-repeat -272px -273px;
+    padding-right: 13px; 
     width: 14px;
     height: 20px;
+    fill: white;
     opacity: 0.3;
 }
 
@@ -277,7 +292,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-sale {
     padding: 10px 10px;
-    width: 130px;
+    width: 140px;
 }
 
 .main-header-sale::before {
@@ -286,7 +301,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     top: 2px;
     background: url(../img/css_sprites.png) no-repeat -202px -232px;
-    padding-right: 10px;
+    padding-right: 17px;
     width: 15px;
     height: 15px;
     opacity: 0.3;
@@ -309,7 +324,7 @@ input[type="radio"].visually-hidden {
 .header-info {
     max-width: 205px;
     height: 70px;
-    padding: 32px 56px 42px 49px;
+    padding: 32px 56px 42px 56px;
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
@@ -360,12 +375,17 @@ input[type="radio"].visually-hidden {
     width: 121px;
     height: 45px;
     padding: 10px 23px 10px 23px;
-    margin-right: 10px;
+   
     background-color: #ffffff;
     font: inherit;
     color: #000000;
     font-size: 21px;
     line-height: 21px;
+}
+
+.header-login {
+    margin-right: 10px;
+    margin-left: 20px;
 }
 
 .login-link .header-login {
@@ -404,17 +424,55 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation-active {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 .user-navigation-active a {
     color: #000000;
+    width: 300px;
+    height: 45px;
+}
+
+.header-login-active::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    background: url(../img/css_sprites.png) no-repeat -74px -273px;
+    padding-right: 15px;
+    width: 20px;
+    height: 18px;
+    opacity: 0.3;
+}
+
+.header-login-active::after {
+    content: "";
+    position: absolute;
+    background: url(../img/css_sprites.png) no-repeat -114px -273px;
+    top: 60px;
+    right: 10px;
+    width: 21px;
+    height: 17px;
+    opacity: 0.3;
+}
+
+.header-login-active:hover::before,
+.header-login-active:hover::after {
+    opacity: 1;
+}
+
+.header-login-active:active::before,
+.header-login-active:active::after {
+    opacity: 0.3;
 }
 
 .login-link-active {
     background-color: #ffffff;
     font-size: 21px;
     line-height: 21px;
+    padding: 12px 70px 12px 14px;
 }
 
 .header-login-active:active {
@@ -423,9 +481,26 @@ input[type="radio"].visually-hidden {
 
 .my-orders,
 .personal {
+    display: inline-block;
     text-decoration: underline;
     font-size: 16px;
     line-height: 18px;
+}
+
+.my-orders {
+    margin-left: 18px;
+}
+
+.header-orders::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    background-color: #32425c;
+    border-radius: 4px;
+    margin-left: 16px;
+    margin-right: 12px;
+    width: 4px;
+    height: 4px;
 }
 
 .my-orders:hover a,
@@ -438,6 +513,10 @@ input[type="radio"].visually-hidden {
     color: rgba(178, 178, 178, 0.3);
 }
 
+.main-navigation {
+    width: 940px;
+}
+
 .site-navigation {
     margin: 0;
     padding: 0;
@@ -448,9 +527,9 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a {
-    width: 53px;
+    width: 55px;
     height: 2px;
-    padding: 20px 35px 21px 35px;
+    padding: 20px 41px 21px 36px;
     background-color: #32425c;
     border-bottom: 5px solid #293449;
     color: #ffffff;
