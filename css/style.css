@@ -27,6 +27,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 :focus {
     outline: 0;
     border: 1px solid #ee3744;
@@ -57,16 +62,23 @@ main h3 {
 }
 /* index.html and total stilization*/
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0px;
-    padding: 0px;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-} 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .container {
     margin: 0px auto;
@@ -86,6 +98,7 @@ main h3 {
     background-color: #293449;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .wrapper-contacts {
@@ -93,6 +106,7 @@ main h3 {
     background-color: #f3f7f8;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .logo-wrapper {
@@ -110,9 +124,10 @@ main h3 {
     position: relative;
     z-index: 1;
     display: flex;
+    flex-wrap: wrap;
     height: 42px;
     width: 940px;
-
+    
 }
 
 .header-contacts {
@@ -192,6 +207,15 @@ main h3 {
     background: url("../img/css_sprites.png") no-repeat -230px -151px;
     width: 17px;
     height: 17px;
+    opacity: 0.3;
+}
+
+.main-search:hover::before {
+    opacity: 1;
+}
+
+.main-search:active::before  {
+    opacity: 0.3;
 }
 
 .control:hover {
@@ -236,10 +260,19 @@ main h3 {
     display: inline-block;
     position: relative;
     top: 8px;
-    background: url("../img/css_sprites.png") no-repeat -195px -273px;
+    background: url("../img/css_sprites.png") no-repeat -235px -273px;
     padding-right: 10px; 
     width: 14px;
     height: 20px;
+    opacity: 0.3;
+}
+
+.main-header-marker:hover::before {
+    opacity: 1;
+}
+
+.main-header-marker:active::before {
+    opacity: 0.3;
 }
 
 .main-header-sale {
@@ -256,15 +289,25 @@ main h3 {
     padding-right: 10px;
     width: 15px;
     height: 15px;
+    opacity: 0.3;
+}
+
+.main-header-sale:hover::before {
+    opacity: 1;
+}
+
+.main-header-sale:active::before {
+    opacity: 0.3;
 }
 
 .header-contacts {
     background-color: #f3f7f9;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .header-info {
-    width: 205px;
+    max-width: 205px;
     height: 70px;
     padding: 32px 56px 42px 49px;
     font-style: italic;
@@ -306,6 +349,7 @@ main h3 {
 
 .user-navigation {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
 }
@@ -335,9 +379,18 @@ main h3 {
     display: inline-block;
     position: relative;
     padding-right: 14px;
-    background: url("../img/css_sprites.png") no-repeat -155px -273px;
+    background: url("../img/css_sprites.png") no-repeat -195px -273px;
     width: 20px;
     height: 17px;
+    opacity: 0.3;
+}
+
+.header-login:hover::before {
+   opacity: 1;
+}
+
+.header-login:active::before {
+    opacity: 0.3;
 }
 
 .header-login:hover,
@@ -390,6 +443,7 @@ main h3 {
     padding: 0;
     margin-top: 20px;
     display: flex;
+    justify-content: center;
     list-style: none;
 }
 
