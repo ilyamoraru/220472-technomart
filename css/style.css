@@ -1060,13 +1060,39 @@ input[type="radio"].visually-hidden {
     width:60px;
     height:60px;
     background: url("../img/new%20flag.png") no-repeat;
-    bottom: 293px;
+    bottom: 287px;
     right: 2px;
 }
 
 .products-item:hover .label-new-products {
     bottom: 288px;
 }
+
+.no-del {
+    min-height: 266px;
+}
+
+.price-no-del {
+    display: block;
+    position: relative;
+    bottom: -35px; 
+    margin:10px auto;
+    width: 141px;
+    height: 38px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+    text-align: center;
+    background: url("../img/css_sprites.png") no-repeat -10px -10px;
+}
+
+.no-del:hover .price-no-del {
+    bottom: -91px;
+}
+
+/*section="manufacturers"*/
 
 .manufacturers-catalog {
     list-style: none;
