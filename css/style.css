@@ -120,6 +120,16 @@ input[type="radio"].visually-hidden {
     background-color: #f4f8f9;
 }
 
+.social-wrap {
+    width: 100%;
+    background-color: #293449;
+}
+
+.conditions-wrap {
+    width: 100%;
+    background-color: #32425c;
+}
+
 .header-user {
     position: relative;
     z-index: 1;
@@ -601,27 +611,6 @@ input[type="radio"].visually-hidden {
     margin-right: 20px;
 }
 
-.features-wrap {
-    position: relative;
-    width: 940px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.features-wrap .features-item {
-    margin-top: 20px;
-     margin-right: 0;
-}
-
-.features-wrap .features-item:nth-of-type(1) {
-    background-color: #8ed78f;
-}
-
-.features-wrap .features-item:nth-of-type(2) {
-    background-color: #ffc047;
-}
-
 .features-item h3 {
     margin: 0;
     padding-left: 23px;
@@ -685,6 +674,20 @@ input[type="radio"].visually-hidden {
 
 .features-item:nth-of-type(3) {
     background-color: #dc91d8;
+}
+
+.features-item:nth-of-type(4) {
+    margin-left: 640px;
+    margin-top: 20px;
+    margin-right: 0;
+    background-color: #8ed78f;
+}
+
+.features-item:nth-of-type(5) {
+    margin-left: 640px;
+    margin-top: 20px;
+    margin-right: 0;
+    background-color: #ffc047;
 }
 
 .features-button-materials::after {
@@ -1473,27 +1476,69 @@ div[class*="services-right"] p {
 
 /* footer class="main-header */
 
+.main-footer {
+    margin: 0 auto;
+    min-height: 300px;
+}
+
+.main-footer-logo {
+    position: relative;
+    top: 17px;
+    height: 31px;
+    width: 136px;
+    padding: 15px 40px;
+    background-color: #ee3643;
+    box-shadow: 0 5px 0 0 #b52933;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.main-footer-logo:hover {
+    background-color: #ca2c37;
+    box-shadow: 0 5px 0 0 #9a212a;
+}
+
+.main-footer-logo:active {
+    background-color: #ba2732;
+    box-shadow: 0 5px 0 0 #8e1e26;
+}
+
+
 .footer-conditions {
+    width: 940px;
+    height: 190px;
     background-color: #32425c;
     color: #f1f5f7;
 }
 
 .footer-contacts {
+    margin-top: 65px;
     font-size: 18px;
     line-height: 24px;
 }
 
 .footer-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
     list-style: none;
 }
 
 .footer-navigation a {
+    margin-right: 60px;
     color: #f1f5f7;
     font-size: 18px;
     line-height: 24px;
 }
 
 .footer-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 553px;
+    padding: 0;
     list-style: none;
 }
 
@@ -1501,6 +1546,10 @@ div[class*="services-right"] p {
     color: #ffd180;
     font-size: 18px;
     line-height: 24px;
+}
+
+.footer-features a:first-child {
+    margin-left: 24px;
 }
 
 .footer-navigation a:hover,
@@ -1514,25 +1563,58 @@ div[class*="services-right"] p {
     text-decoration: none;
 }
 
+.footer-navigation,
+.footer-features {
+    position: relative;
+    left: 381px;
+    bottom: 125px;
+}
+
 /* footer class="footer-social" */
 
 .footer-social {
+    display: flex;
+    width: 940px;
+    min-height: 107px;
     background-color: #293449;
     color: #f1f5f7;
 }
 
 .footer-social ul {
+    margin-top: 36px;
+    margin-right: 120px;
+    display: flex;
+    padding: 0;
     list-style: none;
 }
 
 .footer-social p {
+    padding-top: 40px;
+    margin: 0;
     font-size: 16px;
     line-height: 18px;
 }
 
+.footer-social .copyright {
+    display: block;
+    margin-right: 160px;
+}
+
 .social-button a {
-    background-color: #212a3a;
-    color: #ffffff;
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin-right: 5px;
+    background: url("../img/css_sprites.png") no-repeat  -148px -219px #212a3a;
+    border-radius: 42px;
+}
+
+.social-button:nth-of-type(2) a {
+    background: url("../img/css_sprites.png") no-repeat  -340px 0px #212a3a;
+}
+
+.social-button:nth-of-type(3) a {
+    background: url("../img/css_sprites.png") no-repeat  -104px -222px #212a3a;
 }
 
 .social-button a:hover,
@@ -1540,8 +1622,17 @@ div[class*="services-right"] p {
     background-color: #ee3643;
 }
 
+.connection-wrap {
+    display: flex;
+    flex-wrap: wrap
+}
+
 .connection {
     color: #ffffff;
+}
+
+.connection-wrap .connection:not(:first-child) {
+    margin-left: 53px;
 }
 
 .connection a {
@@ -1562,14 +1653,57 @@ div[class*="services-right"] p {
 /* section class="modal-map" */
 
 .modal-map {
+    display: none;
+    position: fixed;
+    z-index:  110;
+    left: 15%;
+    top: 130px;
+    width: 940px;
+    height: 446px;
     box-shadow: 5px 0 20px 0 #111720;
+}
+
+.modal-map-close {
+    display: block;
+    background: url(../img/css_sprites.png) no-repeat -74px -232px;
+    width: 21px;
+    height: 21px;
+    padding: 10px 10px;
+    position: absolute;
+    bottom: 415px;
+    left: 910px;
+    border: none;
 }
 
 /* section class="modal-contacts" */
 
+.contacts-wrap {
+    display: flex;
+    width: 482px;
+    justify-content: space-between;
+}
+
 .modal-contacts {
+    display: none;
+    position: fixed;
+    z-index: 111;
+    left: 25%;
+    top: 100px;
+    width: 461px;
+    height: 383px;
+    padding: 43px 80px 40px;
+    background-color: #ffffff;
     border-top: 7px solid #ff5357;
     box-shadow: 0 10px 30px 0px #111720;
+}
+
+.modal-contacts div:nth-of-type(2) {
+    position: relative;
+    left: -80px;
+    width: 620px;
+    height: 112px;
+    margin-top: 32px;
+    background-color: #f4f4f4;
 }
 
 .modal-form label {
@@ -1578,8 +1712,16 @@ div[class*="services-right"] p {
     line-height: 18px;
 }
 
+.modal-form input {
+    width: 204px;
+    height: 9px;
+}
+
 .modal-form input,
 .modal-form textarea {
+    padding-top: 13px;
+    padding-left: 16px;
+    padding-bottom: 13px;
     font-family: "PTSans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -1597,7 +1739,13 @@ div[class*="services-right"] p {
 }
 
 .modal-button-sybmit {
+    display: block;
+    position: relative;
+    top: 37px;
+    left: 80px;
+    padding: 12px 202px;
     border: none;
+    border-radius: 3px;
     background-color: #ee3643;
     color: #ffffff;
 }
@@ -1608,6 +1756,19 @@ div[class*="services-right"] p {
 
 .modal-button-sybmit:active {
     background-color: #ba2732;
+}
+
+.modal-contacts-close {
+    display: block;
+    position: absolute;
+    z-index: 111;
+    bottom: 436px;
+    left: 589px;
+    background: url("../img/css_sprites.png") no-repeat -74px -232px;
+    width: 21px;
+    height: 21px;
+    padding: 10px;
+    border: none;
 }
 
 /* catalog.html stilization*/
