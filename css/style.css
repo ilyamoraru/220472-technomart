@@ -1135,15 +1135,26 @@ input[type="radio"].visually-hidden {
 .manufacturers {
     width: 940px;
     min-height: 420px;
-    margin-bottom: 85px;
+    margin-bottom: 65px;
 }
 
 .manufacturers-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .manufacturers-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 143px;
     border: 1px solid #ebebeb;
+    margin-bottom: 20px;
 }
 
 .manufacturers-item:hover {
@@ -1157,6 +1168,7 @@ input[type="radio"].visually-hidden {
 /* section class="services" */
 
 .services {
+    margin-bottom: 80px;
     background-color: #f4f7f9;
 }
 
@@ -1230,12 +1242,59 @@ div[class*="services-right"] p {
     list-style-image: url(list-about.png);
 }*/
 
+.info-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    min-height: 315px;
+    margin-bottom: 85px;
+}
+
+.info-wrap h2 {
+    margin-top: 0;
+}
+
+.about {
+    width: 610px;
+    margin-right: 121px;
+    
+}
+
+.contacts {
+    max-width: 300px;
+}
+
+.about-delivery {
+    list-style: none;
+}
+
 .about-delivery-item {
     font-size: 18px;
     line-height: 20px;
 }
 
+.about-delivery-item::before {
+    content: "";
+    position: relative;
+    right: 37px;
+    top: 10px;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #ee3643;
+    
+}
+
 .about-button {
+    display: block;
+    width: 140px;
+    height: 18px;
+    padding: 10px 40px;
+    margin-top: 37px;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
     background-color: #ff5357;
     color: #ffffff;
 }
@@ -1260,6 +1319,15 @@ div[class*="services-right"] p {
 }
 
 .contacts-button {
+    display: block;
+    width: 177px;
+    height: 15px;
+    padding: 12px 60px;
+    margin-top: -1px;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
     background-color: #ff5357;
     color: #ffffff;
 }
