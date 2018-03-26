@@ -115,6 +115,11 @@ input[type="radio"].visually-hidden {
     margin-top: 45px;
 }
 
+.services-wrapper {
+    width: 100%;
+    background-color: #f4f8f9;
+}
+
 .header-user {
     position: relative;
     z-index: 1;
@@ -1193,24 +1198,102 @@ input[type="radio"].visually-hidden {
 /* section class="services" */
 
 .services {
+    width: 940px;
+    height: 510px;
+    padding-top: 63px;
     margin-bottom: 80px;
     background-color: #f4f7f9;
+}
+
+.services-top {
+    width: 410px;
 }
 
 .services-top p {
     font-family: "PTSans", Arial, sans-serif;
 }
 
+.services-left {
+    position: relative;
+    width: 240px;
+}
+
+div[class*="services-right"] {
+    position: relative;
+    top: -223px;
+    left: 317px;
+    width: 700px;
+    max-height: 300px;
+}
+
+.services .services-right-delivery {
+    display: none;
+}
+
+.services .services-right-guarantee {
+    display: ; 
+}
+
+.services .services-right-credit {
+    display: none;
+}
+
+
+div[class*="services-right"] p {
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.services-right-delivery p{
+    width: 275px;
+}
+
+.services-right-credit p {
+    width: 280px;
+}
+
+div[class*="services-right"] img {
+    position: relative;
+    z-index: 0;
+}
+
+.services-right-delivery img {
+    right: -150px;
+    bottom: 120px;
+}
+
+.services-right-guarantee img {
+    right: -232px;
+    bottom: 192px;
+}
+
+.services-right-credit img {
+    right: -162px;
+    bottom: 124px;
+}
+
 .services-list {
+    padding: 0;
+    margin-top: 71px;
     list-style: none;
 }
 
-.services-item a{
+.services-item a {
+    display: block;
+    width: 218px;
+    height: 45px;
+    padding-top: 15px;
+    padding-left: 22px;
     background-color: #32425c;
     color: #ffffff;
     font-size: 21px;
     line-height: 30px;
     font-weight: bold;
+}
+
+.services-item a:not(:nth-of-type(3)) {
+    border-bottom: 1px solid #4e637b;
 }
 
 .services-item a:hover,
@@ -1221,6 +1304,25 @@ input[type="radio"].visually-hidden {
 .services-item a:active {
     background-color: #ffffff;
     color: #32425c;
+}
+
+.services-item-active a {
+    display: block;
+    width: 218px;
+    height: 45px;
+    padding-top: 15px;
+    padding-left: 22px;
+    background-color: #ffffff;
+    color: #32425c;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.services-shadow {
+    position: absolute;
+    top: -40px;
+    left: 230px;
 }
 
 .services h3 {
@@ -1239,6 +1341,10 @@ div[class*="services-right"] p {
 }
 
 .services-credit-button {
+    display: block;
+    padding: 10px 45px;
+    margin-top: 30px;
+    border-radius: 3px;
     background-color: #ff5357;
     color: #ffffff;
     border: none;
