@@ -12,11 +12,9 @@
         <header class="main-header container">
             <div class="wrapper-user">
             <section class="header-user">
-                <div class="logo-wrapper">
                 <a href="#" class="main-logo ">
-                    <span class="logo">Техномарт</span>
+                    Техномарт
                 </a>
-                </div>
                 <form class="main-search control" method="post" action="https://echo.htmlacademy.ru">
                     <label for="main-search" class="visually-hidden">Поиск</label>
                     <input type="text" id="main-search" name="main-search" class="input-search" placeholder="Поиск:">
@@ -62,7 +60,8 @@
         </header>
         </div>
         
-        <main class="container">
+        <main>
+            
             <h1 class="visually-hidden">Техномарт</h1>
             
             <section class="features container">
@@ -81,28 +80,32 @@
                         <h3>Техника</h3>
                         <a href="catalog-mechanizm.html" title="Техника" class="button features-button features-button-mechanizm">Для стройки</a>
                     </li>
-                    <li class="features-item">
-                        <h3>Скидки 50%</h3>
-                        <a href="#" title="Скидки" class="bitton features-button features-button-sales">На 350 товаров</a>
-                    </li>
-                    <li class="features-item features-delivery">
-                        <h3>Доставка</h3>
-                        <a href="#" title="Доставка" class="button features-button features-button-delivery">Бесплатно</a>
-                    </li>
+                    <div class="features-wrap">
+                        <li class="features-item">
+                            <h3>Скидки 50%</h3>
+                            <a href="#" title="Скидки" class="bitton features-button features-button-sales">На 350 товаров</a>
+                        </li>
+                        <li class="features-item features-delivery">
+                            <h3>Доставка</h3>
+                            <a href="#" title="Доставка" class="button features-button features-button-delivery">Бесплатно</a>
+                        </li>
+                    </div>
                 </ul>
                 <figure class="catalog-gallery">
-                    <div class="catalog-slide">
+                    <div class="catalog-slide-1">
                         <span class="name-1">Перфораторы</span>
                         <span class="info-1">Настоящие мужские игрушки!</span>
                         <a href="#" title="Перфораторы">
                             <img src="img/catalog-perf.jpg" alt="Перфораторы" width="620" height="266" class="slide-1">
                         </a>
-                        <button type="button" class="gallery-control-forward"></button>
-                        <button type="button" class="gallery-control-backward"></button>
                         <button type="button" class="gallery-slide-button-1"></button>
                         <button type="button" class="gallery-slide-button-2"></button>
                     </div>
-                    <div class="catalog-slide">
+                    
+                    <button type="button" class="gallery-control-forward"></button>
+                    <button type="button" class="gallery-control-backward"></button>
+                    
+                    <div class="catalog-slide-2">
                         <span class="name-2">Дрели</span>
                         <span class="info-2">Соседям на радость!</span>
                         <a href="#" title="Дрели">
@@ -177,7 +180,7 @@
                 </div>
             </section>
             
-            <section class="manufacturers">
+            <section class="manufacturers container">
                 <h2 class="visually-hidden">Производители</h2>
                 <header class="popular-header">
                     <h2>Популярные производители:</h2>
