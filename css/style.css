@@ -747,6 +747,31 @@ input[type="radio"].visually-hidden {
     position: absolute;
 }
 
+.catalog-gallery-button {
+    position: absolute;
+    z-index: 100;
+    bottom: 571px;
+    left: -15px;
+    display: block;
+    width: 104px;
+    height: 15px;
+    padding: 12px 50px;
+    border-radius: 3px;
+    background-color: #ee3643;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.catalog-gallery-button:hover {
+    background-color: #ca2c37;
+}
+
+.catalog-gallery-button:active {
+    background-color: #ba2732;
+}
+
 .catalog-slide .button  {
     position: absolute;
     z-index: 100;
