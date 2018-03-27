@@ -32,10 +32,7 @@ img {
     height: auto;
 }
 
-:focus {
-    outline: 0;
-    border: 1px solid #ee3744;
-}
+
 
 .button {
     font-family: "Cuprum", Arial, sans-serif;
@@ -586,10 +583,24 @@ input[type="radio"].visually-hidden {
 
 /* section class="features*/
 
-.features {
+.features-top {
     width: 940px;
-    min-height: 410px;
-    margin-bottom: 53px;
+    margin-bottom: 20px;
+}
+
+.features-bottom {
+    display: flex;
+    width: 940px;
+    margin-bottom: 13px;
+}
+
+.features-flex-wrap {
+    position: relative;
+    right: 60px;
+    height: 266px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .features-list {
@@ -620,9 +631,9 @@ input[type="radio"].visually-hidden {
 }
 
 
-.features-list h3, .label-new {
+.features-item h3, .label-new {
     color: #ffffff;
-     margin: 0;
+    margin: 0;
     padding-left: 23px;
     padding-top: 24px;
 }
@@ -676,16 +687,14 @@ input[type="radio"].visually-hidden {
     background-color: #dc91d8;
 }
 
-.features-item:nth-of-type(4) {
-    margin-left: 640px;
-    margin-top: 20px;
+.features-bottom .features-credit {
+    position: relative;
     margin-right: 0;
     background-color: #8ed78f;
 }
 
-.features-item:nth-of-type(5) {
-    margin-left: 640px;
-    margin-top: 20px;
+.features-bottom .features-delivery {
+    position: relative;
     margin-right: 0;
     background-color: #ffc047;
 }
@@ -751,14 +760,15 @@ input[type="radio"].visually-hidden {
 
 /* figure class="catalog-gallery" */
 
+
 .catalog-gallery {
-    position: absolute;
+    position: relative;
 }
 
 .catalog-gallery-button {
-    position: absolute;
-    z-index: 100;
-    bottom: 571px;
+    position: relative;
+    z-index: 111;
+    top: -73px;
     left: -15px;
     display: block;
     width: 104px;
@@ -780,22 +790,6 @@ input[type="radio"].visually-hidden {
     background-color: #ba2732;
 }
 
-.catalog-slide .button  {
-    position: absolute;
-    z-index: 100;
-    bottom: -86px;
-    left: -15px;
-    width: 101px;
-    height: 14px;
-    padding: 12px 45px 12px 49px;
-    border-radius: 5px;
-    font: inherit;
-    background-color: #ee3643;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 18px;
-}
 
 .catalog-slide .button:hover {
     background-color: #ca2c37;
@@ -807,26 +801,34 @@ input[type="radio"].visually-hidden {
 
 .catalog-slide-1,
 .catalog-slide-2 {
-    position: absolute;
     height: 266px;
     width: 620px;
 }
 
 .catalog-slide-1 {
-    bottom: 58px;
+    display: none;
+    position: relative;
+    height: 266px;
+    left: -40px;
+    bottom: 50px;
+    
 }
 
 .catalog-slide-2 {
-    top: 265px;
+    display: ;
+    position: relative;
+    height: 266px;
+    left: -40px;
+    bottom: 50px;
 }
 
 .gallery-control-forward {
     border: none;
     cursor: pointer;
-    position: relative;
-    bottom: 167px;
-    left: 533px;
-    z-index: 6;
+    position: absolute;
+    z-index: 111;
+    bottom: 162px;
+    left: 534px;
     background: url("../img/css_sprites.png") no-repeat -108px -68px;
     width: 40px;
     height: 40px;
@@ -836,10 +838,10 @@ input[type="radio"].visually-hidden {
 .gallery-control-backward {
     border: none;
     cursor: pointer;
-    position: relative;
-    bottom: 167px;
-    right: 57px;
-    z-index: 6;
+    position: absolute;
+    z-index: 111;
+    bottom: 162px;
+    left: -15px;
     background: url("../img/css_sprites.png") no-repeat -105px -151px;
     width: 40px;
     height: 40px;
@@ -847,19 +849,16 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-1 {
-    position: absolute;
+    position: relative;
     width: 620px;
-    height: 266px;
-    z-index: 5;
-    left: -40px;
-    
+    height: 266px;    
 }
 
 .name-1 {
-    position: absolute;
-    z-index: 6;
-    top: 24px;
-    left: -14px;
+    position: relative;
+    top: 59px;
+    left: 26px;
+    z-index: 2;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 36px;
@@ -868,10 +867,10 @@ input[type="radio"].visually-hidden {
 }
 
 .info-1 {
-    position: absolute;
-    z-index: 6;
-    top: 66px;
-    left: -14px;
+    position: relative;
+    z-index: 2;
+    top: 86px;
+    right: 182px;
     color: #ffffff;
     font-size: 18px;
     line-height: 24px;
@@ -881,9 +880,8 @@ input[type="radio"].visually-hidden {
     border: none;
     padding: 0;
     position: absolute;
-    left: 256px;
-    top: 220px; 
-    z-index: 8;
+    bottom: -2px;
+    left: 294px;
     background: url("../img/selector-1.png") no-repeat;
     width: 30px;
     height: 10px;
@@ -893,9 +891,8 @@ input[type="radio"].visually-hidden {
     border: none;
     padding: 0;
     position: absolute;
-    left: 256px;
-    top: 220px; 
-    z-index: 4;
+    bottom: -2px;
+    left: 294px;
     background: url("../img/selector-2.png") no-repeat;
     width: 30px;
     height: 10px;
@@ -903,17 +900,16 @@ input[type="radio"].visually-hidden {
 
 
 .slide-2 {
-    position: absolute;
-    z-index: 3;
-    bottom: 549px;
-    left: -40px;
+    position: relative;
+    width: 620px;
+    height: 266px;
 }
 
 .name-2 {
-    position: absolute;
-    z-index: 4;
-    bottom: 755px;
-    left: -14px;
+    position: relative;
+    z-index: 2;
+    top: 60px;
+    left: 26px;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 36px;
@@ -922,10 +918,10 @@ input[type="radio"].visually-hidden {
 }
 
 .info-2 {
-    position: absolute;
-    z-index: 4;
-    bottom: 725px;
-    left: -14px;
+    position: relative;
+    z-index: 2;
+    top: 84px;
+    left: -70px;
     color: #ffffff;
     font-size: 18px;
     line-height: 24px;
@@ -1234,18 +1230,55 @@ div[class*="services-right"] {
 }
 
 .services .services-right-guarantee {
-    display: ; 
+    display: none; 
 }
 
 .services .services-right-credit {
-    display: none;
+    display: ;
 }
 
 
 div[class*="services-right"] p {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     display: block;
+    font-family: "PTSans", Arial, sans-serif;
+}
+
+.services-right-delivery p::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -34px;
+    left: 151px;
+    width: 468px;
+    height: 261px;
+    background: url("../img/services-1.png") no-repeat;
+}
+
+.services-right-credit p::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -60px;
+    left: 162px;
+    z-index: -1;
+    width: 465px;
+    height: 285px;
+    background: url("../img/services-3.png") no-repeat;
+}
+
+.services-right-guarantee p::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -60px;
+    left: 238px;
+    z-index: -1;
+    width: 389px;
+    height: 283px;
+    background: url("../img/services-2.png") no-repeat;
 }
 
 .services-right-delivery p{
@@ -1254,26 +1287,6 @@ div[class*="services-right"] p {
 
 .services-right-credit p {
     width: 280px;
-}
-
-div[class*="services-right"] img {
-    position: relative;
-    z-index: 0;
-}
-
-.services-right-delivery img {
-    right: -150px;
-    bottom: 120px;
-}
-
-.services-right-guarantee img {
-    right: -232px;
-    bottom: 192px;
-}
-
-.services-right-credit img {
-    right: -162px;
-    bottom: 124px;
 }
 
 .services-list {
@@ -1295,8 +1308,8 @@ div[class*="services-right"] img {
     font-weight: bold;
 }
 
-.services-item a:not(:nth-of-type(3)) {
-    border-bottom: 1px solid #4e637b;
+.border {
+    border-top: 1px solid #4e637b;
 }
 
 .services-item a:hover,
@@ -1333,14 +1346,16 @@ div[class*="services-right"] img {
     font-weight: normal;
 }
 
+.services h3:first-child {
+    font-family: "Cuprum", Arial, sans-serif; 
+}
+
 div[class*="services-right"] h3 {
+    font-family: "Cuprum", Arial, sans-serif; 
+    color: #32425c;
     text-transform: none;
     font-size: 36px;
     line-height: 36px;
-}
-
-div[class*="services-right"] p {
-    font-family: "PTSans", Arial, sans-serif;
 }
 
 .services-credit-button {
@@ -1521,7 +1536,7 @@ div[class*="services-right"] p {
 
 .footer-navigation {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0;
     list-style: none;
 }
@@ -1548,7 +1563,7 @@ div[class*="services-right"] p {
     line-height: 24px;
 }
 
-.footer-features a:first-child {
+.footer-features li:first-child {
     margin-left: 24px;
 }
 
@@ -1565,6 +1580,7 @@ div[class*="services-right"] p {
 
 .footer-navigation,
 .footer-features {
+    width: 550px;
     position: relative;
     left: 381px;
     bottom: 125px;
