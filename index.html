@@ -9,9 +9,9 @@
     </head> 
     <body>
         <div class="header-wrapper">
-            <header class="main-header container">
+            <header class="main-header ">
                 <div class="wrapper-user">
-                    <section class="header-user">
+                    <section class="header-user container">
                         <a href="#" class="main-logo ">
                             Техномарт
                         </a>
@@ -35,8 +35,10 @@
                 <div class="wrapper-contacts">
                     <section class="header-contacts">
                         <p class="header-info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-                        <p class="tel">+7 (812) 555-05-55</p>
-                        <p class="header-adress">г.Санкт-Петербург, ул. Б.конюшенная, д.19/8</p>
+                        <div class="adress-wrap">
+                            <p class="tel">+7 (812) 555-05-55</p>
+                            <p class="header-adress">г.Санкт-Петербург, ул. Б.конюшенная, д.19/8</p>
+                        </div>
                         <div class="wrapper-user-nav">
                             <ul class="user-navigation">
                                 <li class="login-link"><a href="#" title="Войти" class="header-login">Войти</a></li>
@@ -64,7 +66,7 @@
             
             <h1 class="visually-hidden">Техномарт</h1>
             
-            <section class="features-top container">
+           <section class="features-top container">
                 <h2 class="visually-hidden">Преимущества</h2>
                 <ul class="features-list">
                     <li class="features-item">
@@ -87,23 +89,20 @@
                     <div class="catalog-slide-1">
                         <span class="name-1">Перфораторы</span>
                         <span class="info-1">Настоящие мужские игрушки!</span>
-                        <a href="#" title="Перфораторы">
-                            <img src="img/catalog-perf.jpg" alt="Перфораторы" width="620" height="266" class="slide-1">
-                        </a>
-                        <button type="button" class="gallery-slide-button-1"></button>
+                        <img src="img/catalog-perf.jpg" alt="Перфораторы" width="620" height="266" class="slide-1">
+                        <button type="button" class="gallery-slide-button-1" aria-label="Перфораторы"></button>
+                        <button type="button" class="gallery-slide-button-2" aria-label="Дрели"></button>
                     </div>
                     
-                    
-                    <button type="button" class="gallery-control-forward"></button>
-                    <button type="button" class="gallery-control-backward"></button>
+                    <button type="button" class="gallery-control-forward" aria-label="Вперёд"></button>
+                    <button type="button" class="gallery-control-backward" aria-label="Назад"></button>
                     
                     <div class="catalog-slide-2">
                         <span class="name-2">Дрели</span>
                         <span class="info-2">Соседям на радость!</span>
-                        <a href="#" title="Дрели">
-                            <img src="img/catalog-drill.jpg" alt="Дрели" width="620" height="266" class="slide-2">
-                        </a>
-                        <button type="button" class="gallery-slide-button-2"></button>
+                        <img src="img/catalog-drill.jpg" alt="Дрели" width="620" height="266" class="slide-2">
+                        <button type="button" class="gallery-slide-button-1" aria-label="Перфораторы"></button>
+                        <button type="button" class="gallery-slide-button-2" aria-label="Дрели"></button>
                     </div>
                     <a href="catalog.html" title="Каталог" class="button catalog-gallery-button">Открыть каталог</a>
                 </figure>
@@ -166,7 +165,7 @@
                             <span class="price">25500 Р.</span>
                         </li>
                     
-                        <li class="products-item no-del">
+                        <li class="products-item new-label">
                             <div class="hidden-active">
                                 <button type="button" class="button hidden-button-buy">Купить</button>
                                 <button type="button" class="button hidden-button-marker">В закладки</button>
@@ -175,10 +174,9 @@
                             <span class="product-name">
                                 Перфоратор BOSCH BFG 2000
                             </span>
-                            <span class="label-new-products"></span>
-                            <span class="price-no-del">12500 Р.</span>
+                            <span class="price">12500 Р.</span>
                         </li>
-                </ul>
+                    </ul>
                 </div>
             </section>
             
@@ -216,19 +214,21 @@
                 </ul>
             </section>
             
-            <div class="services-wrapper">
+             <div class="services-wrapper">
                 <section class="services container">
                     <h2 class="visually-hidden">Наши сервисы</h2>
                     <div class="services-top">
                         <h3>Сервисы</h3>
                         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                     </div>
+                    <div class="services-wrap">
                     <div class="services-left">
                         <ul class="services-list">
                             <li class="services-item"><a href="#" title="Доставка">Доставка</a></li>
                             <li class="services-item border"><a href="#" title="Гарантия">Гарантия</a></li>
                             <li class="services-item-active border"><a href="#" title="Кредит">Кредит</a></li>
                         </ul>
+                        <img src="img/shadow-services.png" width="10" height="272" class="shadow">
                     </div>
                     <div class="services-right-delivery">
                         <h3>Доставка</h3>
@@ -244,6 +244,7 @@
                         <p>Залезть в долговую яму стало проще!<br>
                         Кредитные консультанты придут вам на помощь.</p>
                         <button type="button" class="button services-credit-button">Отправить заявку</button>
+                    </div>
                     </div>
                 </section>
             </div>
@@ -270,27 +271,31 @@
             </div>
         </main>
             
-        <footer class="main-footer container">
+        <footer class="main-footer">
             <div class="conditions-wrap">
                 <section class="footer-conditions container">
                     <h2 class="visually-hidden">Навигация по сайту</h2>
-                    <a class="main-footer-logo">
-                        Техномарт
-                    </a>
-                    <p class="footer-contacts">г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br> +7(812)555-05-55</p>
-                    <ul class="footer-navigation">
-                        <li><a href="#" title="Наша компания">Компания</a></li>
-                        <li><a href="#" title="Новости">Новости</a></li>
-                        <li><a href="#" title="Каталог товаров">Каталог</a></li>
-                        <li><a href="#" title="Доставка">Доставка</a></li>
-                        <li><a href="#" title="Наши контакты">Контакты</a></li>
-                    </ul>
-                    <ul class="footer-features">
-                        <li><a href="catalog.html" title="Материалы">Материалы</a></li>
-                        <li><a href="catalog.html" title="Техника">Техника</a></li>
-                        <li><a href="catalog.html" title="Инструменты">Инструмент</a></li>
-                        <li><a href="catalog.html" title="Наши спецпредложения">Спецпредложения</a></li>
-                    </ul>
+                    <div>
+                        <a class="main-footer-logo">
+                            Техномарт
+                        </a>
+                        <p class="footer-contacts">г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br> +7(812)555-05-55</p>
+                    </div>
+                    <div>
+                        <ul class="footer-navigation">
+                            <li><a href="#" title="Наша компания">Компания</a></li>
+                            <li><a href="#" title="Новости">Новости</a></li>
+                            <li><a href="#" title="Каталог товаров">Каталог</a></li>
+                            <li><a href="#" title="Доставка">Доставка</a></li>
+                            <li><a href="#" title="Наши контакты">Контакты</a></li>
+                        </ul>
+                        <ul class="footer-features">
+                            <li><a href="catalog.html" title="Материалы">Материалы</a></li>
+                            <li><a href="catalog.html" title="Техника">Техника</a></li>
+                            <li><a href="catalog.html" title="Инструменты">Инструмент</a></li>
+                            <li><a href="catalog.html" title="Наши спецпредложения">Спецпредложения</a></li>
+                        </ul>
+                    </div>
                 </section>
             </div>
                 
@@ -302,9 +307,9 @@
                         Все права защищены
                     </p>
                     <ul>
-                        <li class="social-button vk"><a href="#" title="Вконтакте"></a></li>
-                        <li class="social-button fb"><a href="#" title="Facebook"></a></li>
-                        <li class="social-button inst"><a href="#" title="Instagram"></a></li>
+                        <li class="social-button vk"><a href="#" title="Вконтакте" aria-label="Вконтакте"></a></li>
+                        <li class="social-button fb"><a href="#" title="Facebook" aria-label="Facebook"></a></li>
+                        <li class="social-button inst"><a href="#" title="Instagram" aria-label="Instagram"></a></li>
                     </ul>
                     <div class="connection-wrap">
                     <p class="connection">
