@@ -107,7 +107,7 @@
                 <div class="filter ">
                     <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
                             
-                            <label for="price-range">Цена:</label>
+                            <label for="price-range" class="price-range-label">Цена:</label>
                             <div class="range-style">
                                 <input type="range" id="price-range" min="0" max="30000" name="price-range" class="price-range">
                             </div>
@@ -363,12 +363,10 @@
             <h2 class="visually-hidden">Корзина</h2>
             <form class="modal-form ">
                 <h3>Товар добавлен в корзину!</h3>
-                <div>
-                    <button type="button" class="button modal-button-buy">Оформить заказ</button>
-                    <button type="button" class="button modal-button-continue">Продолжить покупки</button> 
-                </div>
+                <button type="button" class="button modal-button-buy">Оформить заказ</button>
+                <button type="button" class="button modal-button-continue">Продолжить покупки</button> 
             </form>
-            <button type="button" class="button modal-button-close">Закрыть</button>
+            <button type="button" class="button modal-button-close" aria-label="Закрыть"></button>
         </section>
     </body>
 </html>

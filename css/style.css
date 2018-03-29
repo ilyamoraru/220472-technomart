@@ -1707,13 +1707,15 @@ div[class*="services-right"] h3 {
     padding: 43px 80px 40px;
     background-color: #ffffff;
     border-top: 7px solid #ff5357;
-    box-shadow: 0 10px 30px 0px #111720;
+    box-shadow: 0 10px 30px 0px #111720,
+                0 -112px 0px 0px #f4f4f4 inset;
 }
 
-.modal-contacts div:nth-of-type(2) {
-    position: relative;
-    left: -80px;
-    width: 620px;
+.button-sybmit-wrap {
+    
+    width: 540px;
+    padding-top: 36px;
+    padding-left: 80px;
     height: 112px;
     margin-top: 32px;
     background-color: #f4f4f4;
@@ -1753,9 +1755,8 @@ div[class*="services-right"] h3 {
 
 .modal-button-sybmit {
     display: block;
-    margin-top: 67px;
-    left: 80px;
     padding: 12px 202px;
+    margin-top: 75px;
     border: none;
     border-radius: 3px;
     background-color: #ee3643;
@@ -1875,6 +1876,10 @@ div[class*="services-right"] h3 {
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.filter .price-range-label {
+    padding-left: 0;
 }
 
 .checked .label-checkbox::before {
@@ -2172,6 +2177,9 @@ div[class*="services-right"] h3 {
 /* section class="modal-buy" */
 
 .modal-form h3 {
+    margin: 0;
+    margin-bottom: 108px;
+    margin-left: 95px;
     font-size: 30px;
     line-height: 30px;
 }
@@ -2180,6 +2188,8 @@ div[class*="services-right"] h3 {
     content: "";
     display: block;
     position: absolute;
+    left: 80px;
+    top: 48px;
     background: url("../img/css_sprites.png") no-repeat -269px -10px;
     width: 66px;
     height: 66px;
@@ -2187,19 +2197,27 @@ div[class*="services-right"] h3 {
 
 
 .modal-buy {
-    width: 640px;
+    position: fixed;
+    top: 100px;
+    left: 25%;
+    width: 560px;
+    height: 217px;
+    padding-top: 68px;
+    padding-left: 80px;
+    background-color: #ffffff;
     border-top: 7px solid #ee3643;
-    box-shadow: 0 10px 30px 0px #111720;
-}
-
-.modal-buy div {
-    background-color: #f1f1f1;
+    box-shadow: 0 10px 30px 0px #111720,
+                0 -112px 0px 0px #f4f4f4 inset;
 }
 
 .modal-button-buy {
+    padding: 11px 61px;
+    margin-right: 20px;
     background-color: #ee3643;
     border: none;
+    border-radius: 3px;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 .modal-button-buy:hover {
@@ -2211,7 +2229,22 @@ div[class*="services-right"] h3 {
 }
 
 .modal-button-continue {
+    padding: 11px 61px;
     background-color: #ffffff;
     border: none;
+    border-radius: 3px;
     color: #000000;
+}
+
+.modal-button-close {
+    display: block;
+    position: absolute;
+    z-index: 111;
+    top: 9px;
+    right: 9px;
+    background: url("../img/css_sprites.png") no-repeat -74px -232px;
+    width: 21px;
+    height: 21px;
+    padding: 10px;
+    border: none;
 }
