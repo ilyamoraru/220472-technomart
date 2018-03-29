@@ -40,12 +40,6 @@ img {
     line-height: 18px;
 }
 
-
-.label-new {
-    font-size: 16px;
-    line-height: 18px;
-}
-
 main h2, 
 main h3 {
     font-size: 30px;
@@ -105,8 +99,7 @@ input[type="radio"].visually-hidden {
 
 .wrapper-user-nav {
     height: 100px;
-    margin-left: 60px;
-    margin-top: 45px;
+    margin-left: 49px;
 }
 
 .services-wrapper {
@@ -129,6 +122,17 @@ input[type="radio"].visually-hidden {
     background-color: #f2f6f8;
 }
 
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .header-user {
     position: relative;
     z-index: 1;
@@ -140,7 +144,7 @@ input[type="radio"].visually-hidden {
 
 .header-contacts {
     position: relative;
-    height: 158px;
+    margin-bottom: 19px;
 }
 
 .header-user, .header-user a {
@@ -331,6 +335,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-contacts {
+    padding-top: 47px;
     background-color: #f3f7f9;
     display: flex;
     flex-wrap: wrap;
@@ -339,7 +344,8 @@ input[type="radio"].visually-hidden {
 .header-info {
     max-width: 205px;
     height: 70px;
-    padding: 32px 56px 42px 56px;
+    margin: 0;
+    margin-left: 71px;
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
@@ -351,8 +357,9 @@ input[type="radio"].visually-hidden {
     position: relative;
     width: 167px;
     height: 28px;
-    margin-top: 45px;
-    padding: 10px 36px 7px 59px;
+    margin: 0;
+    margin-left: 70px;
+    padding: 10px 34px 7px 57px;
     border: 3px solid white;
     color: #ee3643;
     font-style: normal;
@@ -373,7 +380,8 @@ input[type="radio"].visually-hidden {
 
 .header-adress {
     display: block;
-    margin-top: -13px;
+    margin-top: 6px;
+    margin-left: 70px;
     font-size: 14px;
     line-height: 24px;
 }
@@ -484,7 +492,7 @@ input[type="radio"].visually-hidden {
 
 .login-link-active .header-login-exit {
    display: inline-block;
-   margin-left: 38px; 
+   margin-left: 30px; 
    background: url(../img/css_sprites.png) no-repeat -114px -273px;
    width: 21px;
    height: 17px;
@@ -601,7 +609,6 @@ input[type="radio"].visually-hidden {
 
 .features-flex-wrap {
     position: relative;
-    right: 60px;
     height: 266px;
     display: flex;
     flex-direction: column;
@@ -616,7 +623,8 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
-.features-item {
+.features-item,
+.label-new {
     position: relative;
     width: 300px;
     height: 125px;
@@ -636,7 +644,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.features-item h3, .label-new {
+.features-item h3 {
     color: #ffffff;
     margin: 0;
     padding-left: 23px;
@@ -680,6 +688,17 @@ input[type="radio"].visually-hidden {
     background-color: rgba(178, 178, 178, 0.5);
 }
 
+.label-new::after {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    content: "";
+    background: url("../img/new%20flag.png") no-repeat;
+    width:60px;
+    height:60px;
+}
+
 .features-item:nth-of-type(1) {
     background-color: #ffbf47;
 }
@@ -704,63 +723,54 @@ input[type="radio"].visually-hidden {
     background-color: #ffc047;
 }
 
-.features-button-materials::after {
+.materials::before {
     content: "";
     position: absolute;
-    left: 185px;
-    bottom: 10px;
+    right: 43px;
+    bottom: 25px;
     background: url(../img/css_sprites.png) no-repeat -10px -232px;
     width: 44px;
     height: 65px;
 }
 
-.features-button-instruments::after {
+.instruments::before {
     content: "";
     position: absolute;
-    left: 180px;
-    bottom: 10px;
+    right: 19px;
+    bottom: 25px;
     background: url("..//img/css_sprites.png") no-repeat -10px -151px;
     width: 75px;
     height: 61px;
 }
 
-.features-button-mechanizm::after {
+.mechanizm::after {
     content: "";
     position: absolute;
-    left: 166px;
-    bottom: 9px;
+    right: 30px;
+    bottom: 25px;
     background: url("..//img/css_sprites.png") no-repeat -171px -10px;
     width: 78px;
     height: 62px;
 }
 
-.features-button-sales::after {
+.sales::after {
     content: "";
     position: absolute;
-    left: 168px;
-    bottom: 2px;
+    right: 45px;
+    bottom: 25px;
     background: url("..//img/css_sprites.png") no-repeat -269px -96px;
     width: 59px;
     height: 72px;
 }
 
-.features-button-delivery::after {
+.delivery::after {
     content: "";
     position: absolute;
-    left: 166px;
-    bottom: 9px;
+    right: 31px;
+    bottom: 25px;
     background: url("..//img/css_sprites.png") no-repeat -10px -68px;
     width: 78px;
     height: 63px;
-}
-
-.label-new-features {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 0;
-    left: 240px;
-    background: url("../img/new%20flag.png") no-repeat;
 }
 
 /* figure class="catalog-gallery" */
@@ -768,14 +778,12 @@ input[type="radio"].visually-hidden {
 .catalog-gallery {
     position: relative;
     margin: 0;
-    margin-right: 80px;
+    margin-right: 20px;
 }
 
 .catalog-gallery-button {
     position: relative;
     z-index: 111;
-    top: -62px;
-    left: 24px;
     display: block;
     width: 104px;
     height: 15px;
@@ -812,15 +820,20 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-slide-1 {
-    display: none;
-    height: 266px;
+    display: block;
+    padding-top: 22px;
+    padding-left: 25px;
+    height: 244px;
+    width: 595px;
     bottom: 50px;
-    
 }
 
 .catalog-slide-2 {
-    display: block;
-    height: 266px;
+    display: none;
+    padding-top: 22px;
+    padding-left: 25px;
+    height: 244px;
+    width: 595px;
     bottom: 50px;
 }
 
@@ -829,7 +842,7 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
     position: absolute;
     z-index: 111;
-    bottom: 150px;
+    bottom: 110px;
     left: 572px;
     background: url("../img/css_sprites.png") no-repeat -108px -68px;
     width: 40px;
@@ -842,7 +855,7 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
     position: absolute;
     z-index: 111;
-    bottom: 150px;
+    bottom: 110px;
     left: 25px;
     background: url("../img/css_sprites.png") no-repeat -105px -151px;
     width: 40px;
@@ -851,29 +864,27 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-1 {
-    position: relative;
-    margin-top: -37px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+    left: 0px;
     width: 620px;
-    height: 266px;    
+    height: 266px;   
 }
 
 .name-1 {
-    position: relative;
-    top: 26px;
-    left: 26px;
-    z-index: 2;
+    display: block;
     color: #ffffff;
     text-transform: uppercase;
+    margin-bottom: 3px;
     font-size: 36px;
     line-height: 36px;
     font-weight: bold;
 }
 
 .info-1 {
-    position: relative;
-    z-index: 2;
-    top: 48px;
-    right: 182px;
+    display: block;
+    margin-bottom: 121px;
     color: #ffffff;
     font-size: 18px;
     line-height: 24px;
@@ -883,7 +894,7 @@ input[type="radio"].visually-hidden {
     border: none;
     padding: 0;
     position: absolute;
-    bottom: 76px;
+    bottom: 36px;
     left: 294px;
     background: url("../img/selector-1.png") no-repeat;
     width: 10px;
@@ -894,7 +905,7 @@ input[type="radio"].visually-hidden {
     border: none;
     padding: 0;
     position: absolute;
-    bottom: 76px;
+    bottom: 36px;
     left: 314px;
     background: url("../img/selector-2.png") no-repeat;
     width: 10px;
@@ -903,29 +914,27 @@ input[type="radio"].visually-hidden {
 
 
 .slide-2 {
-    position: relative;
-    margin-top: -37px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0px;
+    left: 0px;
     width: 620px;
     height: 266px;
 }
 
 .name-2 {
-    position: relative;
-    z-index: 2;
-    top: 26px;
-    left: 26px;
+    display: block;
     color: #ffffff;
     text-transform: uppercase;
+    margin-bottom: 3px;
     font-size: 36px;
     line-height: 36px;
     font-weight: bold;
 }
 
 .info-2 {
-    position: relative;
-    z-index: 2;
-    top: 48px;
-    left: -70px;
+    display: block;
+    margin-bottom: 121px;
     color: #ffffff;
     font-size: 18px;
     line-height: 24px;
@@ -1195,6 +1204,7 @@ input[type="radio"].visually-hidden {
 /* section class="services" */
 
 .services {
+    position: relative;
     height: 510px;
     padding-top: 63px;
     margin-bottom: 80px;
@@ -1227,7 +1237,7 @@ input[type="radio"].visually-hidden {
 
 
 .services .services-right-delivery {
-    display: none;
+    display: block;
 }
 
 .services .services-right-guarantee {
@@ -1235,48 +1245,48 @@ input[type="radio"].visually-hidden {
 }
 
 .services .services-right-credit {
-    display: block;
+    display: none;
 }
 
 
-div[class*="services-right"] p {
+.services-right-description {
     position: relative;
     z-index: 2;
     display: block;
     font-family: "PTSans", Arial, sans-serif;
 }
 
-.services-right-delivery p::after {
+.services-right-delivery::after {
     content: "";
     display: block;
     position: absolute;
-    z-index: -1;
-    top: -34px;
-    left: 151px;
+    z-index: 1;
+    bottom: 42px;
+    right: 0px;
     width: 468px;
     height: 261px;
     background: url("../img/services-1.png") no-repeat;
 }
 
-.services-right-credit p::after {
+.services-right-credit::after {
     content: "";
     display: block;
     position: absolute;
-    top: -60px;
-    left: 162px;
-    z-index: -1;
+    bottom: 44px;
+    right: -8px;
+    z-index: 1;
     width: 465px;
     height: 285px;
     background: url("../img/services-3.png") no-repeat;
 }
 
-.services-right-guarantee p::after {
+.services-right-guarantee::after {
     content: "";
     display: block;
     position: absolute;
-    top: -60px;
-    left: 238px;
-    z-index: -1;
+    bottom: 41px;
+    right: -7px;
+    z-index: 1;
     width: 389px;
     height: 283px;
     background: url("../img/services-2.png") no-repeat;
@@ -1497,16 +1507,16 @@ div[class*="services-right"] h3 {
 
 .main-footer-logo {
     position: relative;
-    top: 17px;
+    top: 21px;
     height: 31px;
-    width: 136px;
-    padding: 15px 40px;
+    width: 200px;
+    padding: 18px 42px;
     background-color: #ee3643;
     box-shadow: 0 5px 0 0 #b52933;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 30px;
+    line-height: 30px;
 }
 
 .main-footer-logo:hover {
@@ -1523,7 +1533,7 @@ div[class*="services-right"] h3 {
 .footer-conditions {
     display: flex;
     justify-content: space-between;
-    height: 190px;
+    height: 195px;
     background-color: #32425c;
     color: #f1f5f7;
 }
@@ -1554,6 +1564,7 @@ div[class*="services-right"] h3 {
     justify-content: space-between;
     width: 553px;
     padding: 0;
+    margin-top: 34px;
     list-style: none;
 }
 
@@ -1588,22 +1599,22 @@ div[class*="services-right"] h3 {
 /* footer class="footer-social" */
 
 .footer-social {
+    padding-top: 40px;
     display: flex;
-    min-height: 107px;
     background-color: #293449;
     color: #f1f5f7;
 }
 
 .footer-social ul {
-    margin-top: 36px;
     margin-right: 120px;
+    margin-top: 0;
+    
     display: flex;
     padding: 0;
     list-style: none;
 }
 
 .footer-social p {
-    padding-top: 40px;
     margin: 0;
     font-size: 16px;
     line-height: 18px;
@@ -1697,7 +1708,7 @@ div[class*="services-right"] h3 {
 }
 
 .modal-contacts {
-    display: block;
+    display: none;
     position: fixed;
     z-index: 111;
     left: 25%;
@@ -1818,7 +1829,7 @@ div[class*="services-right"] h3 {
     line-height: 18px;
 }
 
-.breadcrumbs a::after {
+.bread-item:not(:last-child) a::after {
     content: "";
     display: inline-block;
     margin-right: 16px;
@@ -2099,18 +2110,24 @@ div[class*="services-right"] h3 {
     color: #ee3643;
 }
 
-.sort-up-button {
+.sort-item .sort-up-button {
     display: block;
     background: url("../img/icon-up-dir-active.svg") no-repeat;
     width: 11px;
     height: 18px;
+    text-decoration: none;
+    border: none;
+    opacity: 1;
 }
 
-.sort-down-button {
+.sort-item .sort-down-button {
     display: block;
     background: url(../img/icon-down-dir.svg) no-repeat;
     width: 11px;
     height: 18px;
+    opacity: 0.3;
+    text-decoration: none;
+    border: none;
     opacity: 0.3;
 }
 
@@ -2197,6 +2214,7 @@ div[class*="services-right"] h3 {
 
 
 .modal-buy {
+    display: none;
     position: fixed;
     top: 100px;
     left: 25%;
@@ -2247,4 +2265,8 @@ div[class*="services-right"] h3 {
     height: 21px;
     padding: 10px;
     border: none;
+}
+
+.modal-show {
+    display: block;
 }
