@@ -5,7 +5,7 @@
         <title>Каталог товаров</title>
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
     </head>
     <body class="catalog-page">
         
@@ -13,7 +13,7 @@
             <header class="main-header ">
                 <div class="wrapper-user">
                     <section class="header-user container">
-                        <a href="#" class="main-logo ">
+                        <a href="index.html" class="main-logo ">
                             Техномарт
                         </a>
                         <form class="main-search control" method="post" action="https://echo.htmlacademy.ru">
@@ -23,7 +23,7 @@
                         <a href="#" class="main-header-marker control" title="Закладки:">
                             Закладки:
                         </a>
-                        <a href="#" class="main-header-sale full control" title="Корзина:"> 
+                        <a href="#" class="main-header-sale control" title="Корзина:"> 
                             Корзина:
                         </a>
                         <a class="header-order-button control" href="#" title="Оформить заказ">
@@ -109,27 +109,31 @@
                             
                             <label for="price-range" class="price-range-label">Цена:</label>
                             <div class="range-style">
-                                <input type="range" id="price-range" min="0" max="30000" name="price-range" class="price-range">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="range-toggle range-toggle-min"></div>
+                                <div class="range-toggle range-toggle-max"></div>
                             </div>
-                            <span class="first-range">0</span>
+                            <input type="text" name="first-range" class="first-range" placeholder="0">
                             <span>&#8212</span>
-                            <span class="second-range">30000</span>
+                            <input type="text" name="second-range" class="second-range" placeholder="30000">
                     
                         <div class="fieldset-style">
                             <fieldset>
                                 <legend>Производители:</legend>
                                 <ul>
                                     <li class="filter-option checked">
-                                        <input class="visually-hidden filter-checkbox" type="checkbox" name="BOSCH" id="filter-bosch" checked>
-                                        <label for="filter-bosch" class="label-checkbox">BOSCH</label>
+                                        <input class="visually-hidden filter-checkbox " type="checkbox" name="BOSCH" id="filter-bosch" >
+                                        <label for="filter-bosch" class="label-checkbox check">BOSCH</label>
                                     </li>
                                     <li class="filter-option">
                                         <input class="visually-hidden filter-checkbox" type="checkbox" name="ИНТЕРСКОЛ" id="filter-interscol">
                                         <label for="filter-interscol" class="label-checkbox">Интерскол</label>
                                     </li>
                                     <li class="filter-option checked">
-                                        <input class="visually-hidden filter-checkbox" type="checkbox" name="MAKITA" id="filter-makita" checked>
-                                        <label for="filter-makita" class="label-checkbox">Makita</label>
+                                        <input class="visually-hidden filter-checkbox" type="checkbox" name="MAKITA" id="filter-makita" >
+                                        <label for="filter-makita" class="label-checkbox check">Makita</label>
                                     </li>
                                     <li class="filter-option">
                                         <input class="visually-hidden filter-checkbox" type="checkbox" name="DEWALT" id="filter-dewalt">
@@ -368,5 +372,9 @@
             </form>
             <button type="button" class="button modal-button-close" aria-label="Закрыть"></button>
         </section>
+        
+        <div class="modal-overlay"></div>
+        
+        <script src="js/script.min.js"></script>
     </body>
 </html>
