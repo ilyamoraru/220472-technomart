@@ -815,10 +815,11 @@ input[type="radio"].visually-hidden {
     position: relative;
     z-index: 11;
     display: block;
-    width: 104px;
+    width: 134px;
     height: 15px;
-    padding: 12px 50px;
+    padding: 12px 34px 12px 34px; 
     border-radius: 3px;
+    text-align: center;
     background-color: #ee3643;
     color: #ffffff;
     font-size: 14px;
@@ -1019,9 +1020,9 @@ input[type="radio"].visually-hidden {
 .popular-button {
     text-align: center;
     border-radius: 3px;
-    width: 160px;
+    min-width: 200px;
     height: 16px;
-    padding: 11px 47px 11px; 
+    padding: 11px 27px 11px; 
     background-color: #ee3643;
     text-transform: uppercase;
     color: #ffffff;
@@ -1517,13 +1518,14 @@ div[class*="services-right"] .right-caption {
 
 .about-button {
     display: block;
-    width: 140px;
+    width: 200px;
     height: 19px;
-    padding: 10px 40px;
+    padding: 10px 10px;
     margin-top: 34px;
     border-radius: 3px;
     font-size: 14px;
     line-height: 18px;
+    text-align: center;
     text-transform: uppercase;
     background-color: #ee3643;
     color: #ffffff;
@@ -1551,13 +1553,14 @@ div[class*="services-right"] .right-caption {
 
 .contacts-button {
     display: block;
-    width: 179px;
+    width: 240px;
     height: 15px;
-    padding: 12px 60px;
+    padding: 12px 29px;
     margin-top: 30px;
     border-radius: 3px;
     font-size: 14px;
     line-height: 18px;
+    text-align: center;
     text-transform: uppercase;
     background-color: #ee3643;
     color: #ffffff;
