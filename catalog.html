@@ -5,7 +5,7 @@
         <title>Каталог товаров</title>
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body class="catalog-page">
         
@@ -87,7 +87,7 @@
                     <p>Сортировка:</p>
                     <ul class="sort">
                         <li class="sort-item">
-                            <a href="#" class="button sort-button">По цене</a>
+                            <a href="#" class="button sort-button-active">По цене</a>
                         </li>
                         <li class="sort-item">
                             <a href="#" class="button sort-button">По типу</a>
@@ -107,7 +107,7 @@
                 <div class="filter ">
                     <form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
                             
-                            <label for="price-range" class="price-range-label">Цена:</label>
+                            <label class="price-range-label">Цена:</label>
                             <div class="range-style">
                                 <div class="scale">
                                     <div class="bar"></div>
@@ -116,24 +116,24 @@
                                 <div class="range-toggle range-toggle-max"></div>
                             </div>
                             <input type="text" name="first-range" class="first-range" placeholder="0">
-                            <span>&#8212</span>
+                            <span>&#8212;</span>
                             <input type="text" name="second-range" class="second-range" placeholder="30000">
                     
                         <div class="fieldset-style">
                             <fieldset>
                                 <legend>Производители:</legend>
                                 <ul>
-                                    <li class="filter-option checked">
-                                        <input class="visually-hidden filter-checkbox " type="checkbox" name="BOSCH" id="filter-bosch" >
-                                        <label for="filter-bosch" class="label-checkbox check">BOSCH</label>
+                                    <li class="filter-option">
+                                        <input class="visually-hidden filter-checkbox " type="checkbox" name="BOSCH" id="filter-bosch">
+                                        <label for="filter-bosch" class="label-checkbox">BOSCH</label>
                                     </li>
                                     <li class="filter-option">
                                         <input class="visually-hidden filter-checkbox" type="checkbox" name="ИНТЕРСКОЛ" id="filter-interscol">
                                         <label for="filter-interscol" class="label-checkbox">Интерскол</label>
                                     </li>
-                                    <li class="filter-option checked">
+                                    <li class="filter-option">
                                         <input class="visually-hidden filter-checkbox" type="checkbox" name="MAKITA" id="filter-makita" >
-                                        <label for="filter-makita" class="label-checkbox check">Makita</label>
+                                        <label for="filter-makita" class="label-checkbox">Makita</label>
                                     </li>
                                     <li class="filter-option">
                                         <input class="visually-hidden filter-checkbox" type="checkbox" name="DEWALT" id="filter-dewalt">
@@ -151,8 +151,8 @@
                             <fieldset>
                                 <legend>Питание:</legend>
                                 <ul>
-                                    <li class="filter-option radio-on">
-                                        <input class="visually-hidden filter-radio" type="radio" name="battery" id="filter-battery" checked>
+                                    <li class="filter-option">
+                                        <input class="visually-hidden filter-radio" type="radio" name="battery" id="filter-battery">
                                         <label for="filter-battery" class="label-radio">Аккумуляторные</label>
                                     </li>
                                     <li class="filter-option">
@@ -314,10 +314,12 @@
                 <section class="footer-conditions container">
                     <h2 class="visually-hidden">Навигация по сайту</h2>
                     <div>
-                        <a class="main-footer-logo">
-                            Техномарт
-                        </a>
-                        <p class="footer-contacts">г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br> +7(812)555-05-55</p>
+                        <div class="footer-logo-wrap">
+                            <a href="index.html" class="main-footer-logo">
+                                Техномарт
+                            </a>
+                        </div>
+                        <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55</p>
                     </div>
                     <div>
                         <ul class="footer-navigation">
@@ -375,6 +377,6 @@
         
         <div class="modal-overlay"></div>
         
-        <script src="js/script.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

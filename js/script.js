@@ -7,8 +7,8 @@ var slideRight = document.querySelector(".gallery-control-forward");
 var slideLeft = document.querySelector(".gallery-control-backward");
 var slide1 = document.querySelector(".catalog-slide-1");
 var slide2 = document.querySelector(".catalog-slide-2");
-var slide3 = document.querySelector(".gallery-slide-select-1");
-var slide4 = document.querySelector(".gallery-slide-select-2")
+var slide3 = document.querySelector(".gallery-slide-button-1");
+var slide4 = document.querySelector(".gallery-slide-button-2")
 
 var deliveryLeft = document.querySelector(".delivery-item");
 var guaranteeLeft = document.querySelector(".guarantee-item");
@@ -39,16 +39,16 @@ if (slideLeft != null || slideRight != null) {
         evt.preventDefault();
         slide1.classList.toggle("show");
         slide2.classList.toggle("show");
-        slide3.classList.toggle("show");
-        slide4.classList.toJson("show");
+        slide3.classList.toggle("gallery-slide-select-1");
+        slide4.classList.toggle("gallery-slide-select-2");
     });
 
     slideRight.addEventListener("click", function(evt) {
         evt.preventDefault();
         slide1.classList.toggle("show");
         slide2.classList.toggle("show");
-        slide3.classList.toggle("show");
-        slide4.classList.toJson("show");
+        slide3.classList.toggle("gallery-slide-select-1");
+        slide4.classList.toggle("gallery-slide-select-2");
     })
 }
 
