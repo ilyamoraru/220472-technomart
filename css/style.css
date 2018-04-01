@@ -83,7 +83,6 @@ input[type="radio"].visually-hidden {
 }
 
 .wrapper-user-nav {
-    margin-left: 64px;
     height: 100px;
 }
 
@@ -322,6 +321,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     margin-bottom: 7px;
     padding-top: 47px;
+    width: 940px;
     background-color: #f3f7f9;
 }
 
@@ -336,12 +336,17 @@ input[type="radio"].visually-hidden {
     color: #ee3643;
 }
 
+.adress-wrap {
+    margin-left: 64px;
+    margin-right: 55px;
+    width: 270px;
+}
+
 .tel {
     position: relative;
     display: block;
     margin: 0;
-    margin-left: 64px;
-    padding: 10px 34px 7px 71px;
+    padding: 7px 38px 10px 67px;
     width: 160px;
     height: 21px;
     color: #ee3643;
@@ -362,10 +367,45 @@ input[type="radio"].visually-hidden {
     background: url("../img/css_sprites.png") no-repeat -316px -188px;
 }
 
+.inner-tel {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 9px 33px 8px 73px;
+    width: 160px;
+    height: 21px;
+    color: #ee3643;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 21px;
+    border: 3px solid white;
+}
+
+.inner-tel::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 237px;
+    display: block;
+    width: 19px;
+    height: 19px;
+    background: url("../img/css_sprites.png") no-repeat -316px -188px;
+}
+
 .header-adress {
     display: block;
     margin-top: 3px;
-    margin-left: 70px;
+    width: 265px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #32425c;
+}
+
+.inner-header-adress {
+    display: block;
+    margin-top: 5px;
+    padding-left: 15px;
+    width: 265px;
     font-size: 14px;
     line-height: 24px;
     color: #32425c;
@@ -398,8 +438,9 @@ input[type="radio"].visually-hidden {
 
 .login-link .header-login {
     position: relative;
-    padding: 10px 15px;
-    padding-left: 57px;
+    margin-left: 5px;
+    padding: 10px 22px;
+    padding-left: 50px;
     width: 80px;
 }
 
@@ -472,7 +513,7 @@ input[type="radio"].visually-hidden {
 }
 
 .login-link-active {
-    padding: 12px 6px 12px 42px;
+    padding: 12px 10px 12px 46px;
     height: 25px;
     font-size: 21px;
     line-height: 21px;
@@ -505,6 +546,7 @@ input[type="radio"].visually-hidden {
 
 .my-orders .header-orders,
 .personal .header-personal {
+    padding-left: 5px;
     color: #32425c;
 }
 
@@ -518,7 +560,7 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     vertical-align: middle;
     margin-left: 16px;
-    margin-right: 12px;
+    margin-right: 7px;
     width: 4px;
     height: 4px;
     background-color: #32425c;
@@ -998,6 +1040,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-button {
+    margin-top: -7px;
     padding: 11px 27px 11px; 
     min-width: 200px;
     height: 16px;
@@ -1044,7 +1087,7 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 20px;
-    padding: 35px 7px 15px;
+    padding: 45px 7px 15px;
     width: 203px;
     height: 266px;
     border: 1px solid #eaeaea;
@@ -1074,7 +1117,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-shadow {
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .catalog-shadow .products-item:hover,
@@ -1085,7 +1128,7 @@ input[type="radio"].visually-hidden {
 .product-name {
     display: block;
     margin-bottom: 13px;
-    padding: 5px 16px 0 16px;
+    padding: 5px 12px 0 12px;
     text-align: center;
     font-weight: bold;
     font-size: 18px;
@@ -1193,7 +1236,7 @@ input[type="radio"].visually-hidden {
     content: "";
     position: absolute;
     z-index: 1;
-    bottom: 257px;
+    bottom: 267px;
     left: 158px;
     width:60px;
     height:60px;
@@ -1243,7 +1286,7 @@ input[type="radio"].visually-hidden {
 .services {
     position: relative;
     margin-bottom: 80px;
-    padding-top: 58px;
+    padding-top: 65px;
     height: 457px;
     background-color: #f4f7f9;
 }
@@ -1253,8 +1296,8 @@ input[type="radio"].visually-hidden {
 }
 
 .services-top p {
-    margin-bottom: 55px;
-    font-family: "PTSans", Arial, sans-serif;
+    margin-bottom: 50px;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .services-left {
@@ -1293,7 +1336,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     z-index: 2;
     display: block;
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .services-right-delivery::after {
@@ -1446,13 +1489,13 @@ div[class*="services-right"] .right-caption {
 
 .about p {
     margin-top: 25px;
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .info-wrap {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 84px;
+    margin-bottom: 86px;
     min-height: 315px;
 }
 
@@ -1496,7 +1539,7 @@ div[class*="services-right"] .right-caption {
 
 .about-button {
     display: block;
-    margin-top: 34px;
+    margin-top: 33px;
     padding: 10px 10px;
     width: 200px;
     height: 19px;
@@ -1525,13 +1568,14 @@ div[class*="services-right"] .right-caption {
 }
 
 .contacts p {
-    margin-bottom: 65px;
+    margin-bottom: 32px;
     margin-top: 0;
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .contacts-button {
     display: block;
+    margin-top: 29px;
     padding: 12px 29px;
     width: 240px;
     height: 15px;
@@ -1808,7 +1852,7 @@ div[class*="services-right"] .right-caption {
     padding-top: 13px;
     padding-left: 16px;
     padding-bottom: 13px;
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     border: 2px solid #dee3e4;
@@ -1877,7 +1921,7 @@ div[class*="services-right"] .right-caption {
     margin-top: 20px;
     margin-bottom: 18px;
     padding: 0;
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     list-style: none;
 }
 
@@ -1910,7 +1954,7 @@ div[class*="services-right"] .right-caption {
     padding: 12px 150px 12px 19px;
     width: 52px;
     height: 14px;
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
@@ -1924,7 +1968,7 @@ div[class*="services-right"] .right-caption {
 }
 
 .filter {
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .filter p {
@@ -2134,7 +2178,7 @@ input[type="radio"]:checked + .label-radio::before {
 .filter-button {
     margin-top: 60px;
     padding: 12px 39px 8px;
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
@@ -2158,7 +2202,7 @@ input[type="radio"]:checked + .label-radio::before {
     width: 660px;
     height: 21px;    
     background-color: #f7f3ec;
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
@@ -2177,7 +2221,7 @@ input[type="radio"]:checked + .label-radio::before {
     display: flex;
     margin: 0;
     padding: 0;
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
     list-style: none;
     background-color: #f7f3ec;
@@ -2203,7 +2247,7 @@ input[type="radio"]:checked + .label-radio::before {
 .sort-item a {
     margin-bottom: 12px;
     height: 12px;
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #000000;
@@ -2307,14 +2351,14 @@ input[type="radio"]:checked + .label-radio::before {
 }
 
 .catalog-about {
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .catalog-list {
     margin-left: 20px;
     margin-top: 12px;
     width: 700px;
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 /* section class="modal-buy" */
