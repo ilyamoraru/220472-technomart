@@ -2107,7 +2107,6 @@ input[type="radio"]:checked + .label-radio::before {
     padding-left: 25px;
     background-color: #f7f3ec;
     border-radius: 3px;
-    cursor: pointer;
 }
 
 .scale {
@@ -2132,6 +2131,7 @@ input[type="radio"]:checked + .label-radio::before {
     bottom: 30px;
     left: 20px;
     background: url("../img/css_sprites.png") no-repeat -190px -151px;
+    cursor: pointer;
 }
 
 .range-toggle-max {
@@ -2139,6 +2139,7 @@ input[type="radio"]:checked + .label-radio::before {
     bottom: 30px;
     right: 40px;
     background: url("../img/css_sprites.png") no-repeat -190px -151px;
+    cursor: pointer;
 }
 
 .filter-form input[type="text"] {
