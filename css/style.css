@@ -1843,6 +1843,10 @@ div[class*="services-right"] .right-caption {
                 0 -112px 0px 0px #f4f4f4 inset;
 }
 
+.modal-contacts p {
+    margin-bottom: 75px;
+}
+
 .button-sybmit-wrap {
     margin-top: 32px;
     padding-top: 36px;
