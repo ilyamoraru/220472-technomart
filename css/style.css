@@ -464,7 +464,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-login:hover::before {
-   opacity: 1;
+    opacity: 1;
 }
 
 .header-login:active::before {
@@ -1198,7 +1198,8 @@ input[type="radio"].visually-hidden {
 }
 
 .hidden-button-marker {
-    margin: 0 auto;
+    margin: 6px auto;
+    margin-top: 6px;
     padding: 7px 0;
     width: 129px;
     font-family: "Cuprum", Arial, sans-serif;
@@ -2116,7 +2117,7 @@ input[type="radio"]:checked + .label-radio::before {
 }
 
 .bar {
-    width: 131px;
+    width: 135px;
     height: 2px;
     background-color: #00ca74;
 }
@@ -2129,14 +2130,14 @@ input[type="radio"]:checked + .label-radio::before {
 .range-toggle-min {
     position: absolute;
     bottom: 30px;
-    left: 12px;
+    left: 20px;
     background: url("../img/css_sprites.png") no-repeat -190px -151px;
 }
 
 .range-toggle-max {
     position: absolute;
     bottom: 30px;
-    right: 60px;
+    right: 40px;
     background: url("../img/css_sprites.png") no-repeat -190px -151px;
 }
 
@@ -2147,7 +2148,8 @@ input[type="radio"]:checked + .label-radio::before {
     margin-top: 9px;
     margin-bottom: 25px;
     padding: 0;
-    padding-top: 9px;
+    padding-left: 1px;
+    padding-top: 11px;
     padding-bottom: 14px;
     width: 94px;
     height: 15px;    
@@ -2158,14 +2160,19 @@ input[type="radio"]:checked + .label-radio::before {
 }
 
 .filter-form span {
+    display: inline-block;
+    vertical-align: middle;
     margin-left: 5px;
     margin-right: 5px;
+    padding-bottom: 15px;
+    margin-left: 7px;
+    
 }
 
 .first-range,
 .second-range {
     display: block;
-    padding: 10px 41px;
+    font-size: 17px;
     border-radius: 3px;
     background-color: #f7f3ec;
 }
