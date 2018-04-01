@@ -1092,7 +1092,6 @@ input[type="radio"].visually-hidden {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     margin-bottom: 20px;
     padding: 45px 7px 5px;
     width: 203px;
@@ -2061,7 +2060,7 @@ div[class*="services-right"] .right-caption {
 input[type="checkbox"]:checked + .label-checkbox::before {
     content: "";
     position: absolute;
-    z-index: 7;
+    z-index: 1;
     left: 0px;
     display: block;
     width: 27px;
@@ -2456,7 +2455,7 @@ input[type="radio"]:checked + .label-radio::before {
 }
 
 .modal-button-buy {
-    margin-right: 20px;
+    margin-right: 17px;
     padding: 11px 61px;
     color: #ffffff;
     text-transform: uppercase;
@@ -2474,7 +2473,7 @@ input[type="radio"]:checked + .label-radio::before {
 }
 
 .modal-button-continue {
-    padding: 11px 51px;
+    padding: 11px 41px;
     background-color: #ffffff;
     border: none;
     border-radius: 3px;
