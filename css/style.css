@@ -69,9 +69,6 @@ input[type="radio"].visually-hidden {
 }
 
 .wrapper-user {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     width: 100%;
     background-color: #293449;
 }
@@ -1356,7 +1353,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     z-index: 1;
     bottom: 1px;
-    right: 0px;
+    right: 10px;
     display: block;
     width: 468px;
     height: 261px;
@@ -1678,6 +1675,7 @@ div[class*="services-right"] .right-caption {
     font-size: 18px;
     line-height: 24px;
 }
+
 
 .footer-navigation li:not(:last-child) {
     margin-right: 60px;
