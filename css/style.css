@@ -1734,6 +1734,7 @@ div[class*="services-right"] .right-caption {
     height: 70px;
     background-color: #293449;
     color: #f1f5f7;
+    box-sizing: content-box;
 }
 
 .footer-social ul {
