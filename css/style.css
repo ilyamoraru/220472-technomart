@@ -87,6 +87,8 @@ input[type="radio"].visually-hidden {
 
 .services-wrapper {
     width: 100%;
+    height: 520px;
+    margin-bottom: 80px;
     background-color: #f4f8f9;
 }
 
@@ -127,6 +129,7 @@ input[type="radio"].visually-hidden {
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
+    box-sizing: content-box;
 }
 
 .header-user .main-logo  {
@@ -1356,8 +1359,8 @@ input[type="radio"].visually-hidden {
     content: "";
     position: absolute;
     z-index: 1;
-    bottom: 1px;
-    right: 10px;
+    top: 260px;
+    right: 0px;
     display: block;
     width: 468px;
     height: 261px;
@@ -1368,8 +1371,8 @@ input[type="radio"].visually-hidden {
     content: "";
     position: absolute;
     z-index: 1;
-    bottom: 3px;
-    right: -8px;
+    top: 233px;
+    right: 0px;
     display: block;
     width: 465px;
     height: 285px;
@@ -1380,8 +1383,8 @@ input[type="radio"].visually-hidden {
     content: "";
     position: absolute;
      z-index: 1;
-    bottom: 0px;
-    right: -7px;
+    top: 236px;
+    right: 0px;
     display: block;
     width: 389px;
     height: 283px;
@@ -1660,7 +1663,7 @@ div[class*="services-right"] .right-caption {
 
 .footer-contacts {
     width: 325px;
-    margin-top: 49px;
+    margin-top: 48px;
     padding-left: 3px;
     font-size: 18px;
     line-height: 24px;
@@ -1669,7 +1672,7 @@ div[class*="services-right"] .right-caption {
 .footer-navigation {
     display: flex;
     justify-content: space-between;
-    margin-top: 39px;
+    margin-top: 38px;
     padding: 0;
     list-style: none;
 }
@@ -2019,7 +2022,7 @@ div[class*="services-right"] .right-caption {
     display: block;
     margin: 0;
     margin-top: 20px;
-    padding: 12px 150px 12px 19px;
+    padding: 13px 150px 12px 19px;
     width: 52px;
     height: 14px;
     font-family: "PT Sans", Arial, sans-serif;
@@ -2277,7 +2280,7 @@ input[type="radio"]:checked + .label-radio::before {
     display: flex;
     justify-content: space-between;
     margin: 20px 0 7px 20px;
-    padding: 11px 17px 6px 19px;
+    padding: 13px 17px 6px 19px;
     width: 660px;
     height: 21px;    
     background-color: #f7f3ec;
@@ -2291,7 +2294,6 @@ input[type="radio"]:checked + .label-radio::before {
 .sort-section p {
     display: block;
     margin: 0;
-    padding-top: 3px;
     font-size: 13px;
     line-height: 18px;
 }
